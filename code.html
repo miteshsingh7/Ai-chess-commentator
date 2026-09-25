@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary": "#00391c", "background": "#111316", "on-tertiary-fixed": "#00210e", "primary": "#f2ca50", "on-tertiary-fixed-variant": "#00522b", "secondary-fixed-dim": "#c3c6ce", "error-container": "#93000a", "primary-fixed-dim": "#e9c349", "tertiary": "#6de698", "surface-container-lowest": "#0c0e11", "on-primary-container": "#554300", "secondary-container": "#43474e", "on-surface-variant": "#d0c5af", "tertiary-container": "#4fc97f", "surface-dim": "#111316", "on-primary-fixed-variant": "#574500", "outline": "#99907c", "surface-container-high": "#282a2d", "inverse-surface": "#e2e2e6", "inverse-on-surface": "#2f3034", "inverse-primary": "#735c00", "on-error": "#690005", "surface-bright": "#37393d", "error": "#ffb4ab", "on-primary-fixed": "#241a00", "secondary-fixed": "#dfe2eb", "tertiary-fixed-dim": "#64dd91", "on-secondary-container": "#b2b5bd", "surface-container-low": "#1a1c1f", "surface-container": "#1e2023", "on-secondary": "#2d3137", "surface": "#111316", "on-error-container": "#ffdad6", "on-secondary-fixed-variant": "#43474e", "surface-variant": "#333538", "on-tertiary-container": "#00502a", "surface-container-highest": "#333538", "on-background": "#e2e2e6", "secondary": "#c3c6ce", "outline-variant": "#4d4635", "primary-container": "#d4af37", "surface-tint": "#e9c349", "primary-fixed": "#ffe088", "on-primary": "#3c2f00", "tertiary-fixed": "#82faab", "on-secondary-fixed": "#181c22" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1.5rem", "space-md": "1rem", "gutter-mobile": "0.75rem", "gutter": "1.5rem", "margin": "2rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "space-xs": "0.25rem" }, "fontFamily": { "label-sm": ["Manrope"], "headline-md": ["EB Garamond"], "label-md": ["Manrope"], "display-lg": ["EB Garamond"], "body-sm": ["Manrope"], "headline-sm": ["EB Garamond"], "body-md": ["Manrope"], "headline-lg": ["EB Garamond"], "body-lg": ["EB Garamond"], "notation-mono": ["Manrope"], "headline-lg-mobile": ["EB Garamond"], "display-lg-mobile": ["EB Garamond"] }, "fontSize": { "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "700" }], "headline-md": ["1.5rem", { "lineHeight": "2rem", "fontWeight": "500" }], "label-md": ["0.8125rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "display-lg": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.02em", "fontWeight": "500" }], "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "fontWeight": "400" }], "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "500" }], "body-md": ["0.9375rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "headline-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.85rem", "fontWeight": "400" }], "notation-mono": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "fontWeight": "600" }], "display-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_12px_32px_-4px_rgba(0,0,0,0.65)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-max"><a class="flex items-center gap-space-sm" data-path="board-analyzer" href="#"><img alt="ChessMind Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XmROnQDlf5td-NnXR6gN101FovqMvam4cvavnZirpAdeJO7Pr4ePi3ae8g77f0LNXrl8r4wEAbpcAjeoQoNbWLaxwXUu4Xifkp8TCtfI92ixgTAS2cwu0VwxfaasDoViqxE13wnK2qBDu2ny-KuqAjZRg9RHgHjTH5G92NXhj7wl6_e2FmxEeyoGRrSLeUZxbLzN6KoQyy-St83Ih2AqX09UbAEWEP9nX-7tzIUVauBGYxws7SuQQMc6Md"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-medium leading-none">ChessMind</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">AI Analysis Salon</span></div></a></div><nav class="hidden md:flex items-center p-space-xs bg-surface-container-lowest rounded-xl" data-active-classes="bg-surface-container-high text-primary font-semibold shadow-inner"><a aria-current="page" class="px-space-md py-space-xs rounded transition-colors bg-surface-container-high text-primary font-semibold shadow-inner" data-path="board-analyzer" href="#">Board Analyzer</a><a class="px-space-md py-space-xs rounded text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container transition-colors" data-path="saved-positions" href="#">Saved Positions</a><a class="px-space-md py-space-xs rounded text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container transition-colors" data-path="tactics-library" href="#">Tactics Library</a></nav><div class="flex items-center gap-space-md min-w-max"><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-low rounded-lg"><span class="h-2 w-2 rounded-full bg-tertiary shadow-[0_0_8px_rgba(109,230,152,0.6)]"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Stockfish 16.1 NNUE</span><span class="font-label-sm text-label-sm text-tertiary font-bold ml-1">Ready</span></div><a class="p-space-xs rounded text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors flex items-center justify-center" data-path="settings" href="#" title="Analysis Engine Settings"><span class="material-symbols-outlined text-[20px]">settings</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Orbs -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-96 -right-24 w-80 h-80 bg-tertiary/5 rounded-full blur-3xl pointer-events-none"></div>
+<!-- MAIN WRAPPER -->
+<div class="w-full px-gutter-mobile md:px-gutter py-space-md md:py-space-lg flex flex-col gap-space-lg">
+<!-- TOP CONTROL DECK: PRESETS & DIRECT INPUTS -->
+<section class="flex flex-col gap-space-md bg-surface-container-low p-space-md md:p-space-lg rounded-xl shadow-xl border border-white/5">
+<!-- Presets Row & Meta Toolbar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mr-space-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">auto_awesome</span> Tactical Motifs:
+            </span>
+<button class="preset-pill px-space-md py-space-xs rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" type="button">Scholar's Mate</button>
+<button class="preset-pill px-space-md py-space-xs rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" type="button">Hanging Piece</button>
+<button class="preset-pill active-preset px-space-md py-space-xs rounded-lg font-label-md text-label-md bg-primary-container text-on-primary font-bold shadow-[0_0_12px_rgba(212,175,55,0.3)] transition-all" type="button">Knight Fork</button>
+<button class="preset-pill px-space-md py-space-xs rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" type="button">Missed Mate</button>
+<button class="preset-pill px-space-md py-space-xs rounded-lg font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" type="button">Greek Gift Sacrifice</button>
+</div>
+<div class="flex items-center gap-space-xs self-end lg:self-auto text-on-surface-variant">
+<button class="flex items-center gap-1 px-space-sm py-space-xs rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-sm text-label-sm transition-colors" id="btn-flip-top" type="button">
+<span class="material-symbols-outlined text-[16px]">swap_vert</span> Flip Orientation
+            </button>
+<button class="flex items-center gap-1 px-space-sm py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span> Reset
+            </button>
+<button id="btn-pgn-toggle" class="flex items-center gap-1 px-space-sm py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">text_snippet</span> PGN Import
+            </button>
+</div>
+</div>
+<!-- Inputs Row -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-sm items-center">
+<!-- FEN Input -->
+<div class="lg:col-span-7 flex items-center bg-surface-container-lowest rounded-lg px-space-sm py-space-xs focus-within:ring-1 focus-within:ring-primary/60 transition-all">
+<span class="font-notation-mono text-notation-mono text-outline uppercase text-[11px] px-2 py-0.5 rounded bg-surface-container-high mr-2 select-none">FEN</span>
+<input class="w-full bg-transparent text-on-surface font-notation-mono text-body-sm focus:outline-none placeholder:text-outline/50 truncate" id="fen-input" placeholder="Paste FEN string here..." spellcheck="false" type="text" value="r1bq1rk1/pp3ppp/2n1pn2/3p4/2PP4/2NB1N2/PP1Q1PPP/R3K2R w KQ - 3 10"/>
+<button class="p-1 rounded text-outline hover:text-primary transition-colors" title="Copy FEN" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+<!-- Move Played Input -->
+<div class="lg:col-span-3 flex items-center bg-surface-container-lowest rounded-lg px-space-sm py-space-xs focus-within:ring-1 focus-within:ring-primary/60 transition-all">
+<span class="font-notation-mono text-notation-mono text-outline uppercase text-[11px] px-2 py-0.5 rounded bg-surface-container-high mr-2 select-none">Move</span>
+<input class="w-full bg-transparent text-primary font-notation-mono text-body-sm font-bold focus:outline-none placeholder:text-outline/50" id="move-input" placeholder="e.g. 18. Nf3??" spellcheck="false" type="text" value="18. Nf3??"/>
+<button class="p-1 rounded text-outline hover:text-error transition-colors" title="Clear move" type="button">
+<span class="material-symbols-outlined text-[18px]">backspace</span>
+</button>
+</div>
+<!-- Primary CTA Button -->
+<div class="lg:col-span-2">
+<button class="w-full h-11 flex items-center justify-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold shadow-[0_4px_20px_rgba(242,202,80,0.25)] hover:shadow-[0_4px_24px_rgba(242,202,80,0.4)] transition-all" id="btn-analyze" type="button">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+<span>Analyze Move</span>
+</button>
+</div>
+</div>
+<!-- PGN Import Drawer -->
+<div id="pgn-drawer" style="display:none" class="flex-col gap-space-sm bg-surface-container-lowest p-space-md rounded-lg border border-primary/20 shadow-xl mt-2">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<span class="font-label-sm text-primary uppercase tracking-wider font-semibold flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">receipt_long</span> Load PGN Game</span>
+<div class="flex flex-wrap items-center gap-2">
+<button id="btn-sample-opera" type="button" class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-[11px] transition-colors">Morphy Opera Game (1858)</button>
+<button id="btn-sample-fork" type="button" class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-[11px] transition-colors">Knight Fork Blunder</button>
+<button id="btn-close-pgn" type="button" class="p-1 rounded text-outline hover:text-on-surface"><span class="material-symbols-outlined text-[18px]">close</span></button>
+</div>
+</div>
+<textarea id="pgn-textarea" rows="3" class="w-full bg-surface-container-low text-on-surface font-notation-mono text-body-sm p-space-sm rounded border border-outline-variant/30 focus:outline-none focus:ring-1 focus:ring-primary/60 placeholder:text-outline/50" placeholder="Paste PGN here..."></textarea>
+<div class="flex items-center justify-between">
+<span id="pgn-status-msg" class="font-label-sm text-[11px] text-outline">Paste a game or select a sample above</span>
+<button id="btn-load-pgn-submit" type="button" class="h-9 px-space-md rounded bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-md font-bold uppercase tracking-wider flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">upload</span> Parse &amp; Load</button>
+</div>
+</div>
+</section>
+<!-- MAIN WORKSPACE: BOARD (7 Cols) + INSIGHT CARD (5 Cols) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT: CHESSBOARD WORKBENCH (7 COLS) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Board Outer Container with Luxury Mat Frame -->
+<div class="relative bg-surface-container-low p-space-sm sm:p-space-md rounded-xl shadow-[0_16px_40px_-8px_rgba(0,0,0,0.85)] flex flex-col items-center">
+<!-- Chessboard Shell & SVG Coordinates -->
+<div class="relative w-full max-w-[580px] aspect-square rounded-lg overflow-hidden select-none shadow-2xl bg-[#80664d]">
+<!-- 8x8 Board Grid -->
+<div class="w-full h-full grid grid-cols-8 grid-rows-8 relative" id="board-grid"></div>
+<!-- Tactical Threat Overlay SVG (Dynamic tactical vector arrow connecting f6 to e4 fork) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none z-10" viewbox="0 0 800 800">
+<defs>
+<marker id="arrowhead-red" markerheight="8" markerwidth="8" orient="auto" refx="5" refy="3.5">
+<polygon fill="#ffb4ab" points="0 0, 7 3.5, 0 7"></polygon>
+</marker>
+<marker id="arrowhead-gold" markerheight="8" markerwidth="8" orient="auto" refx="5" refy="3.5">
+<polygon fill="#f2ca50" points="0 0, 7 3.5, 0 7"></polygon>
+</marker>
+<filter id="glow-threat">
+<fegaussianblur result="blur" stddeviation="3"></fegaussianblur>
+<femerge>
+<femergenode in="blur"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+</defs>
+<!-- Threat trajectory: f6 (center ~550, 250) down to e4 (center ~450, 450) -->
+<path d="M 550 250 Q 510 320 460 430" fill="none" filter="url(#glow-threat)" marker-end="url(#arrowhead-red)" opacity="0.9" stroke="#ffb4ab" stroke-dasharray="8 6" stroke-width="5"></path>
+<!-- Fork secondary attack arc toward d2 Queen and e1 King -->
+<path d="M 450 450 L 360 635" fill="none" marker-end="url(#arrowhead-gold)" opacity="0.75" stroke="#f2ca50" stroke-dasharray="5 5" stroke-width="3"></path>
+<path d="M 450 450 L 445 730" fill="none" marker-end="url(#arrowhead-gold)" opacity="0.75" stroke="#f2ca50" stroke-dasharray="5 5" stroke-width="3"></path>
+</svg>
+</div>
+<!-- HORIZONTAL EVALUATION BAR -->
+<div class="w-full max-w-[580px] mt-space-md flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#181a1d] ring-1 ring-white/20"></span>
+<span id="eval-advantage-label" class="text-on-surface font-semibold">Equal position</span>
+<span id="eval-score-pill" class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-notation-mono text-[11px] font-bold ml-1">0.00</span>
+</div>
+<div class="flex items-center gap-2 text-outline text-[11px]">
+<span id="eval-move-info">Move 0</span>
+<span class="text-outline-variant">|</span>
+<span>Depth 28</span>
+</div>
+</div>
+<!-- Bar Track -->
+<div class="relative w-full h-3 bg-[#fdfbf7] rounded-full overflow-hidden shadow-inner flex">
+<!-- White Side (Fills proportional to + score; here Black dominates so White is small) -->
+<div id="eval-bar-white" class="h-full bg-[#fdfbf7] transition-all duration-500" style="width: 50%"></div>
+<!-- Black Side Fill -->
+<div id="eval-bar-black" class="h-full bg-[#181a1d] transition-all duration-500 relative" style="width: 50%">
+<!-- Midpoint Notch -->
+<div class="absolute left-[-1px] top-0 bottom-0 w-[2px] bg-primary shadow-[0_0_6px_rgba(242,202,80,0.8)] z-10"></div>
+</div>
+</div>
+</div>
+<!-- BOARD UTILITY PLAYBACK CONTROLS -->
+<div class="w-full max-w-[580px] mt-space-sm pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1">
+<button class="p-2 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" id="btn-first-move" title="First Move" type="button">
+<span class="material-symbols-outlined text-[20px]">first_page</span>
+</button>
+<button class="p-2 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" id="btn-prev-move" title="Previous Move" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="p-2 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" id="btn-next-move" title="Next Move" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+<button class="p-2 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" id="btn-last-move" title="Latest Move" type="button">
+<span class="material-symbols-outlined text-[20px]">last_page</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span> Play Best Move (18. d5)
+                </button>
+<button class="p-2 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" id="btn-flip-board" title="Flip Board" type="button">
+<span class="material-symbols-outlined text-[20px]">sync</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT: EDITORIAL COMMENTARY & AI INSIGHT CARD (5 COLS) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Primary Insight Card -->
+<div id="insight-card-root" class="bg-surface-container-low rounded-xl p-space-lg shadow-xl border border-white/5 flex flex-col gap-space-md relative overflow-hidden">
+<!-- Amber Accent Line Atop Card -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-error via-primary to-primary-container"></div>
+<!-- BADGES ROW -->
+<div id="card-badges-row" class="flex flex-wrap items-center justify-between gap-space-xs pb-space-xs border-b border-outline-variant/30">
+<div class="flex items-center gap-space-xs">
+<span id="card-quality-pill" class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-error/15 text-error font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span id="card-quality-icon" class="material-symbols-outlined text-[15px]">dangerous</span>
+<span id="card-quality-text">Blunder</span>
+</span>
+<span id="card-motif-badge" class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-primary/10 text-primary font-label-sm text-label-sm">
+<span id="card-motif-icon" class="material-symbols-outlined text-[15px]">electric_bolt</span>
+<span id="card-motif-text">Knight Fork</span>
+</span>
+</div>
+<div id="card-grounding-badge" class="flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[11px]" title="Grounded Engine">
+<span id="card-grounding-icon" class="material-symbols-outlined text-tertiary text-[14px]">verified</span>
+<span id="card-grounding-text">Grounded Engine</span>
+</div>
+</div>
+<!-- MOVE CONTEXT HEADER -->
+<div class="flex items-baseline justify-between mt-1">
+<div>
+<span id="card-move-meta" class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Move — · — Played</span>
+<h2 id="card-move-san" class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">—</h2>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Centipawn Loss</span>
+<p id="card-cp-loss" class="font-notation-mono text-headline-sm text-on-surface font-bold leading-tight">0 cp</p>
+</div>
+</div>
+<!-- SKELETON LOADING STATE -->
+<div id="card-skeleton" style="display:none" class="flex-col gap-3 p-space-md bg-surface-container-lowest rounded-lg border border-primary/10 shadow-inner animate-pulse">
+<div class="h-5 bg-surface-container-high rounded w-3/4"></div>
+<div class="h-4 bg-surface-container-high rounded w-full"></div>
+<div class="h-4 bg-surface-container-high rounded w-5/6"></div>
+<div class="flex items-center gap-2 pt-2 text-outline text-[12px]"><span class="material-symbols-outlined text-[16px] text-primary">cyclone</span><span>Generating AI commentary...</span></div>
+</div>
+<!-- ERROR STATE -->
+<div id="card-error" style="display:none" class="flex-col gap-2 p-space-md bg-error-container/20 rounded-lg border border-error/40 shadow-inner">
+<div class="flex items-center gap-2 font-bold text-headline-sm text-error"><span class="material-symbols-outlined text-[20px]">cloud_off</span><span>Analysis Unavailable</span></div>
+<p id="card-error-text" class="text-body-sm text-on-surface-variant">Could not reach <span id="card-error-url" class="font-notation-mono text-primary">http://localhost:8001</span>.</p>
+<div class="flex items-center gap-2 pt-1"><button id="btn-retry-commentary" type="button" class="px-3 py-1 rounded bg-error text-on-error font-label-sm font-bold text-[12px]">Retry</button><span class="text-[11px] text-outline">Ensure API server is running on port 8001</span></div>
+</div>
+<!-- PROSE COMMENTARY -->
+<div id="card-prose-container" class="p-space-md bg-surface-container-lowest rounded-lg border border-primary/10 shadow-inner">
+<p id="card-commentary-text" class="font-body-lg text-body-lg leading-relaxed font-headline-md" style="color:#e2e2e6">Load a PGN or enter a FEN + move above, then click Analyze Move to get AI commentary.</p>
+</div>
+<!-- COLLAPSIBLE ENGINE DETAILS (Open by Default) -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between text-on-surface font-label-md text-label-md">
+<span class="flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-primary text-[18px]">memory</span> Deep Engine Details
+                </span>
+<span class="font-label-sm text-label-sm text-outline">Stockfish 16.1 NNUE</span>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-sm text-body-sm">
+<!-- Recommended Move -->
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Top Engine Engine Line:</span>
+<div class="flex items-center gap-space-xs">
+<span id="card-best-move" class="font-notation-mono text-tertiary font-bold">—</span>
+<button class="px-2 py-0.5 rounded bg-surface-container-high hover:bg-surface-bright text-primary font-label-sm text-[11px] transition-colors" type="button">Show</button>
+</div>
+</div>
+<!-- PV Line -->
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Principal Variation (PV):</span>
+<div class="p-2 rounded bg-surface-container-lowest font-notation-mono text-body-sm text-on-surface-variant break-all select-all">
+                    18. d5 exd5 19. exd5 Ne5 20. Nxe5 Bxe5 21. Rfe1 Qd6 22. Rac1
+                  </div>
+</div>
+<!-- Calculation Metadata -->
+<div class="grid grid-cols-2 gap-space-xs pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-outline">layers</span>
+<span>Depth: <b class="text-on-surface">28/44</b></span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-outline">speed</span>
+<span>Nodes: <b class="text-on-surface">18.4M (3.2s)</b></span>
+</div>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE QUALITY COMPARISON TOGGLES -->
+<div class="flex items-center justify-between pt-space-xs text-outline text-[12px]">
+<span>Preview alternate move evaluations:</span>
+<div class="flex gap-1">
+<button class="px-2 py-0.5 rounded bg-tertiary/15 text-tertiary font-bold hover:bg-tertiary/25 text-[11px]" type="button">Best (d5)</button>
+<button class="px-2 py-0.5 rounded bg-yellow-500/15 text-yellow-400 font-bold hover:bg-yellow-500/25 text-[11px]" type="button">Inaccuracy</button>
+<button class="px-2 py-0.5 rounded bg-error/15 text-error font-bold ring-1 ring-error/40 text-[11px]" type="button">Blunder</button>
+</div>
+</div>
+</div>
+<!-- ASYNCHRONOUS "ANALYSIS IN PROGRESS" SKELETON STATE CARD -->
+<div class="bg-surface-container-low rounded-xl p-space-md border border-white/5 flex flex-col gap-space-sm opacity-90 shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Continuous Background Analysis</span>
+</div>
+<span class="font-notation-mono text-[11px] text-outline">Thread #4</span>
+</div>
+<!-- Skeleton Content Mimic -->
+<div class="flex flex-col gap-2 animate-pulse pt-1">
+<div class="h-3 w-3/4 bg-surface-container-high rounded"></div>
+<div class="h-3 w-1/2 bg-surface-container-high rounded"></div>
+<div class="h-2 w-full bg-surface-container rounded mt-1"></div>
+</div>
+<p class="font-body-sm text-body-sm text-outline pt-1 text-[12px] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">tune</span> Stockfish scanning depth 32 transposition tables...
+            </p>
+</div>
+</div>
+</section>
+<!-- BOTTOM SECTION: GRANDMASTER HISTORICAL MATCH ANNOTATION -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-lg border border-white/5 flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[28px]">menu_book</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Canonical Game Reference</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Morphy vs. The Duke of Brunswick (1858)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Opera House Paris · Classic open game exploitation of undeveloped king</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<button class="w-full md:w-auto px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">library_books</span> Load Master PGN
+          </button>
+<button class="w-full md:w-auto px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span> Bookmark
+          </button>
+</div>
+</section>
+</div>
+</div>
+<!-- INTERACTIVE MICRO-INTERACTION LOGIC -->
+<script>
+    const API_BASE_URL = "http://localhost:8001";
+    const PIECE_SVGS = {
+  "r": "<svg class=\"w-[82%] h-[82%] drop-shadow-[0_2px_4px_rgba(0,0,0,0.45)]\" viewbox=\"0 0 45 45\">\n<g fill=\"#181a1d\" stroke=\"#e2e2e6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.2\">\n<path d=\"M 9,39 L 36,39 L 36,36 L 9,36 z\"></path>\n<path d=\"M 12,36 L 12,32 L 33,32 L 33,36 z\"></path>\n<path d=\"M 11,14 L 11,9 L 15,9 L 15,11 L 20,11 L 20,9 L 25,9 L 25,11 L 30,11 L 30,9 L 34,9 L 34,14 z\"></path>\n<path d=\"M 34,14 L 31,17 L 14,17 L 11,14 z\"></path>\n<path d=\"M 31,17 L 31,29.5 L 14,29.5 L 14,17 z\"></path>\n<path d=\"M 31,29.5 L 32.5,32 L 12.5,32 L 14,29.5 z\"></path>\n<path d=\"M 11,14 L 34,14\" fill=\"none\" stroke=\"#e2e2e6\" stroke-width=\"1\"></path>\n</g>\n</svg>",
+  "b": "<svg class=\"w-[82%] h-[82%] drop-shadow-[0_2px_4px_rgba(0,0,0,0.45)]\" viewbox=\"0 0 45 45\">\n<g fill=\"#181a1d\" stroke=\"#e2e2e6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.2\">\n<path d=\"M 9,36 C 12.39,35.03 19.11,36.43 22.5,34 C 25.89,36.43 32.61,35.03 36,36 C 36,36 37.65,36.54 39,38 C 38.32,38.97 37.35,38.99 36,38.5 C 32.61,37.53 25.89,38.96 22.5,37.5 C 19.11,38.96 12.39,37.53 9,38.5 C 7.646,38.99 6.677,38.97 6,38 C 7.354,36.54 9,36 9,36 z\"></path>\n<path d=\"M 15,32 C 17.5,34.5 27.5,34.5 30,32 C 30.5,30.5 30,30 30,30 C 30,27.5 27.5,26 27.5,26 C 33,24.5 33.5,14.5 22.5,10.5 C 11.5,14.5 12,24.5 17.5,26 C 17.5,26 15,27.5 15,30 C 15,30 14.5,30.5 15,32 z\"></path>\n<circle cx=\"22.5\" cy=\"8\" r=\"2.5\"></circle>\n</g>\n<path d=\"M 17.5,26 L 27.5,26 M 15,30 L 30,30 M 22.5,15.5 L 22.5,20.5 M 20,18 L 25,18\" fill=\"none\" stroke=\"#e2e2e6\" stroke-width=\"1.2\"></path>\n</svg>",
+  "q": "<svg class=\"w-[86%] h-[86%] drop-shadow-[0_2px_4px_rgba(0,0,0,0.45)]\" viewbox=\"0 0 45 45\">\n<g fill=\"#181a1d\" stroke=\"#e2e2e6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.2\">\n<path d=\"M 9,26 C 17.5,24.5 30,24.5 36,26 L 38.5,13.5 L 31,25 L 30.7,10.5 L 25.5,24.5 L 22.5,10 L 19.5,24.5 L 14.3,10.5 L 14,25 L 6.5,13.5 z\"></path>\n<path d=\"M 9,26 C 9,28 10.5,28 11.5,30 C 12.5,31.5 12.5,31 12,33.5 C 10.5,34.5 11,36 11,36 C 9.5,37.5 11,38.5 11,38.5 C 17.5,39.5 27.5,39.5 34,38.5 C 34,38.5 35.5,37.5 34,36 C 34,36 34.5,34.5 33,33.5 C 32.5,31 32.5,31.5 33.5,30 C 34.5,28 36,28 36,26 z\"></path>\n<path d=\"M 11.5,30 C 15,29 30,29 33.5,30\" fill=\"none\"></path>\n<path d=\"M 12,33.5 C 18,32.5 27,32.5 33,33.5\" fill=\"none\"></path>\n<circle cx=\"6\" cy=\"12\" r=\"1.5\"></circle>\n<circle cx=\"14\" cy=\"9\" r=\"1.5\"></circle>\n<circle cx=\"22.5\" cy=\"8\" r=\"1.5\"></circle>\n<circle cx=\"31\" cy=\"9\" r=\"1.5\"></circle>\n<circle cx=\"39\" cy=\"12\" r=\"1.5\"></circle>\n</g>\n</svg>",
+  "k": "<svg class=\"w-[86%] h-[86%] drop-shadow-[0_2px_4px_rgba(0,0,0,0.45)]\" viewbox=\"0 0 45 45\">\n<g fill=\"#181a1d\" stroke=\"#e2e2e6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.2\">\n<path d=\"M 22.5,11.63 L 22.5,6\"></path>\n<path d=\"M 20,8 L 25,8\"></path>\n<path d=\"M 22.5,25 C 22.5,25 27,17.5 25.5,14.5 C 24,11.5 21,11.5 19.5,14.5 C 18,17.5 22.5,25 22.5,25\"></path>\n<path d=\"M 11.5,37 C 17,40.5 28,40.5 33.5,37 C 36.5,30 37.5,19 32,15.5 C 27,12.5 18,12.5 13,15.5 C 7.5,19 8.5,30 11.5,37 z\"></path>\n<path d=\"M 20,27.5 L 25,27.5\" fill=\"none\"></path>\n<path d=\"M 11.5,30 C 17,29 28,29 33.5,30\" fill=\"none\"></path>\n<path d=\"M 11.5,33.5 C 17,32.5 28,32.5 33.5,33.5\" fill=\"none\"></path>\n<path d=\"M 11.5,37 C 17,36 28,36 33.5,37\" fill=\"none\"></path>\n</g>\n</svg>",
+  "p": "<svg class=\"w-[70%] h-[70%] drop-shadow\" viewbox=\"0 0 45 45\"><path d=\"M 22.5,9 C 19.7,9 17.5,11.2 17.5,14 C 17.5,15.7 18.3,17.2 19.7,18.1 C 15.6,19.6 12.5,23.6 12.5,28.5 C 12.5,30.2 13.9,31.5 15.5,31.5 L 29.5,31.5 C 31.1,31.5 32.5,30.2 32.5,28.5 C 32.5,23.6 29.4,19.6 25.3,18.1 C 26.7,17.2 27.5,15.7 27.5,14 C 27.5,11.2 25.3,9 22.5,9 z\" fill=\"#181a1d\" stroke=\"#e2e2e6\" stroke-width=\"1.2\"></path></svg>",
+  "n": "<svg class=\"w-[82%] h-[82%] drop-shadow-[0_2px_4px_rgba(0,0,0,0.45)]\" viewbox=\"0 0 45 45\">\n<g fill=\"#181a1d\" stroke=\"#e2e2e6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.2\">\n<path d=\"M 22,10 C 32.5,11 38.5,18 38,39 L 15,39 C 15,30 25,32.5 23,18\"></path>\n<path d=\"M 24,18 C 24.38,20.91 18.45,25.37 16,27 C 13,29 13.18,31.34 11,31 C 9.958,30.06 12.41,27.96 11,28 C 10,28 11.19,29.23 10,30 C 9,30 5.997,31 6,26 C 6,24 12,14 12,14 C 12,14 13.89,12.1 14,10.5 C 13.27,7.4 17.5,4.5 17.5,4.5 C 17.5,4.5 21,5.5 22,10 z\"></path>\n<circle cx=\"15.5\" cy=\"11.5\" fill=\"#e2e2e6\" r=\"1.5\"></circle>\n</g>\n</svg>",
+  "P": "<svg class=\"w-[70%] h-[70%] drop-shadow\" viewbox=\"0 0 45 45\"><path d=\"M 22.5,9 C 19.7,9 17.5,11.2 17.5,14 C 17.5,15.7 18.3,17.2 19.7,18.1 C 15.6,19.6 12.5,23.6 12.5,28.5 C 12.5,30.2 13.9,31.5 15.5,31.5 L 29.5,31.5 C 31.1,31.5 32.5,30.2 32.5,28.5 C 32.5,23.6 29.4,19.6 25.3,18.1 C 26.7,17.2 27.5,15.7 27.5,14 C 27.5,11.2 25.3,9 22.5,9 z\" fill=\"#fdfbf7\" stroke=\"#22262d\" stroke-width=\"1.2\"></path></svg>",
+  "N": "<svg class=\"w-[82%] h-[82%] drop-shadow\" viewbox=\"0 0 45 45\">\n<g fill=\"#fdfbf7\" stroke=\"#22262d\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.2\">\n<path d=\"M 22,10 C 32.5,11 38.5,18 38,39 L 15,39 C 15,30 25,32.5 23,18\"></path>\n<path d=\"M 24,18 C 24.38,20.91 18.45,25.37 16,27 C 13,29 13.18,31.34 11,31 C 9.958,30.06 12.41,27.96 11,28 C 10,28 11.19,29.23 10,30 C 9,30 5.997,31 6,26 C 6,24 12,14 12,14 C 12,14 13.89,12.1 14,10.5 C 13.27,7.4 17.5,4.5 17.5,4.5 C 17.5,4.5 21,5.5 22,10 z\"></path>\n<circle cx=\"15.5\" cy=\"11.5\" fill=\"#22262d\" r=\"1.5\"></circle>\n</g>\n</svg>",
+  "B": "<svg class=\"w-[82%] h-[82%] drop-shadow\" viewbox=\"0 0 45 45\">\n<g fill=\"#fdfbf7\" stroke=\"#22262d\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.2\">\n<path d=\"M 9,36 C 12.39,35.03 19.11,36.43 22.5,34 C 25.89,36.43 32.61,35.03 36,36 C 36,36 37.65,36.54 39,38 C 38.32,38.97 37.35,38.99 36,38.5 C 32.61,37.53 25.89,38.96 22.5,37.5 C 19.11,38.96 12.39,37.53 9,38.5 C 7.646,38.99 6.677,38.97 6,38 C 7.354,36.54 9,36 9,36 z\"></path>\n<path d=\"M 15,32 C 17.5,34.5 27.5,34.5 30,32 C 30.5,30.5 30,30 30,30 C 30,27.5 27.5,26 27.5,26 C 33,24.5 33.5,14.5 22.5,10.5 C 11.5,14.5 12,24.5 17.5,26 C 17.5,26 15,27.5 15,30 C 15,30 14.5,30.5 15,32 z\"></path>\n<circle cx=\"22.5\" cy=\"8\" r=\"2.5\"></circle>\n</g>\n<path d=\"M 17.5,26 L 27.5,26 M 15,30 L 30,30 M 22.5,15.5 L 22.5,20.5 M 20,18 L 25,18\" fill=\"none\" stroke=\"#22262d\" stroke-width=\"1.2\"></path>\n</svg>",
+  "Q": "<svg class=\"w-[86%] h-[86%] drop-shadow\" viewbox=\"0 0 45 45\">\n<g fill=\"#fdfbf7\" stroke=\"#22262d\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.2\">\n<path d=\"M 9,26 C 17.5,24.5 30,24.5 36,26 L 38.5,13.5 L 31,25 L 30.7,10.5 L 25.5,24.5 L 22.5,10 L 19.5,24.5 L 14.3,10.5 L 14,25 L 6.5,13.5 z\"></path>\n<path d=\"M 9,26 C 9,28 10.5,28 11.5,30 C 12.5,31.5 12.5,31 12,33.5 C 10.5,34.5 11,36 11,36 C 9.5,37.5 11,38.5 11,38.5 C 17.5,39.5 27.5,39.5 34,38.5 C 34,38.5 35.5,37.5 34,36 C 34,36 34.5,34.5 33,33.5 C 32.5,31 32.5,31.5 33.5,30 C 34.5,28 36,28 36,26 z\"></path>\n<circle cx=\"6\" cy=\"12\" r=\"1.5\"></circle>\n<circle cx=\"14\" cy=\"9\" r=\"1.5\"></circle>\n<circle cx=\"22.5\" cy=\"8\" r=\"1.5\"></circle>\n<circle cx=\"31\" cy=\"9\" r=\"1.5\"></circle>\n<circle cx=\"39\" cy=\"12\" r=\"1.5\"></circle>\n</g>\n</svg>",
+  "R": "<svg class=\"w-[82%] h-[82%] drop-shadow\" viewbox=\"0 0 45 45\">\n<g fill=\"#fdfbf7\" stroke=\"#22262d\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.2\">\n<path d=\"M 9,39 L 36,39 L 36,36 L 9,36 z\"></path>\n<path d=\"M 12,36 L 12,32 L 33,32 L 33,36 z\"></path>\n<path d=\"M 11,14 L 11,9 L 15,9 L 15,11 L 20,11 L 20,9 L 25,9 L 25,11 L 30,11 L 30,9 L 34,9 L 34,14 z\"></path>\n<path d=\"M 34,14 L 31,17 L 14,17 L 11,14 z\"></path>\n<path d=\"M 31,17 L 31,29.5 L 14,29.5 L 14,17 z\"></path>\n<path d=\"M 31,29.5 L 32.5,32 L 12.5,32 L 14,29.5 z\"></path>\n<path d=\"M 11,14 L 34,14\" fill=\"none\" stroke=\"#22262d\" stroke-width=\"1\"></path>\n</g>\n</svg>",
+  "K": "<svg class=\"w-[86%] h-[86%] drop-shadow\" viewbox=\"0 0 45 45\">\n<g fill=\"#fdfbf7\" stroke=\"#22262d\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.2\">\n<path d=\"M 22.5,11.63 L 22.5,6\"></path>\n<path d=\"M 20,8 L 25,8\"></path>\n<path d=\"M 22.5,25 C 22.5,25 27,17.5 25.5,14.5 C 24,11.5 21,11.5 19.5,14.5 C 18,17.5 22.5,25 22.5,25\"></path>\n<path d=\"M 11.5,37 C 17,40.5 28,40.5 33.5,37 C 36.5,30 37.5,19 32,15.5 C 27,12.5 18,12.5 13,15.5 C 7.5,19 8.5,30 11.5,37 z\"></path>\n<path d=\"M 20,27.5 L 25,27.5\" fill=\"none\"></path>\n<path d=\"M 11.5,30 C 17,29 28,29 33.5,30\" fill=\"none\"></path>\n<path d=\"M 11.5,33.5 C 17,32.5 28,32.5 33.5,33.5\" fill=\"none\"></path>\n<path d=\"M 11.5,37 C 17,36 28,36 33.5,37\" fill=\"none\"></path>\n</g>\n</svg>"
+};
+    const SAMPLE_PGNS = {
+      opera: `[Event "Paris Opera House"]
+[Date "1858.??.??"]
+[White "Paul Morphy"]
+[Black "Duke Karl / Count Isouard"]
+[Result "1-0"]
+1. e4 e5 2. Nf3 d6 3. d4 Bg4 4. dxe5 Bxf3 5. Qxf3 dxe5 6. Bc4 Nf6 7. Qb3 Qe7 8. Nc3 c6 9. Bg5 b5 10. Nxb5 cxb5 11. Bxb5+ Nbd7 12. O-O-O Rd8 13. Rxd7 Rxd7 14. Rd1 Qe6 15. Bxd7+ Nxd7 16. Qb8+ Nxb8 17. Rd8# 1-0`,
+      fork: `[Event "Club Game"]
+[White "Player A"]
+[Black "Player B"]
+[Result "0-1"]
+1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 Bb7 9. O-O a6 10. e4 c5 11. d5 c4 12. Bc2 Qc7 13. dxe6 fxe6 14. Qe2 Bd6 15. Rd1 O-O 16. h3 Rad8 17. Bg5 h6 18. Nxb5 axb5 0-1`
+    };
+    const AppState = {
+      currentFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      isFlipped: false, gameMoves: [], currentMoveIndex: -1,
+      lastMoveSquares: {from:null,to:null}, abortController:null, isFetching:false
+    };
+    function renderBoard(fen,flipped,hl){
+      const grid=document.getElementById("board-grid");
+      if(!grid) return;
+      grid.innerHTML="";
+      const rows=fen.split(" ")[0].split("/");
+      const board=rows.map(row=>{
+        const cells=[];
+        for(const ch of row){
+          if(ch>="1"&&ch<="8") for(let i=0;i<+ch;i++) cells.push(null);
+          else cells.push(ch);
+        }
+        return cells;
+      });
+      const rO=flipped?[7,6,5,4,3,2,1,0]:[0,1,2,3,4,5,6,7];
+      const fO=flipped?[7,6,5,4,3,2,1,0]:[0,1,2,3,4,5,6,7];
+      for(let ri=0;ri<8;ri++){
+        const r=rO[ri];
+        for(let fi=0;fi<8;fi++){
+          const c=fO[fi];
+          const sq=String.fromCharCode(97+c)+(8-r);
+          const light=(r+c)%2===0;
+          const div=document.createElement("div");
+          div.dataset.square=sq;
+          let cls="relative flex items-center justify-center select-none ";
+          cls+=light?"bg-[#dfd2b5] text-[#80664d]":"bg-[#80664d] text-[#dfd2b5]";
+          if(hl&&(hl.from===sq||hl.to===sq)) cls+=" ring-2 ring-inset ring-primary/80";
+          div.className=cls;
+          if(fi===0){const l=document.createElement("span");l.className="absolute top-0.5 left-1 font-label-sm text-[10px] opacity-60 pointer-events-none";l.textContent=8-r;div.appendChild(l);}
+          if(ri===7){const l=document.createElement("span");l.className="absolute bottom-0.5 right-1 font-label-sm text-[10px] opacity-60 pointer-events-none";l.textContent=String.fromCharCode(97+c);div.appendChild(l);}
+          const piece=board[r][c];
+          if(piece&&PIECE_SVGS[piece]){const w=document.createElement("div");w.className="w-full h-full flex items-center justify-center";w.innerHTML=PIECE_SVGS[piece];div.appendChild(w);}
+          grid.appendChild(div);
+        }
+      }
+    }
+    function evalBar(cp){
+      const pct=cp==null?50:Math.max(5,Math.min(95,50+cp/20));
+      const wb=document.getElementById("eval-bar-white"),bb=document.getElementById("eval-bar-black");
+      const lbl=document.getElementById("eval-advantage-label"),pill=document.getElementById("eval-score-pill");
+      if(wb) wb.style.width=pct+"%";
+      if(bb) bb.style.width=(100-pct)+"%";
+      if(pill) pill.textContent=cp==null?"0.00":(cp>0?"+":"")+(cp/100).toFixed(2);
+      if(lbl) lbl.textContent=cp==null||Math.abs(cp)<40?"Equal position":cp>0?"White advantage":"Black advantage";
+    }
+    function setLoading(on){
+      const sk=document.getElementById("card-skeleton"),pr=document.getElementById("card-prose-container"),er=document.getElementById("card-error"),br=document.getElementById("card-badges-row");
+      if(sk) sk.style.display=on?"flex":"none";
+      if(pr) pr.classList.toggle("hidden",on);
+      if(er) er.style.display="none";
+      if(br) br.style.opacity=on?"0.4":"1";
+    }
+    function setError(msg){
+      const sk=document.getElementById("card-skeleton"),pr=document.getElementById("card-prose-container"),er=document.getElementById("card-error"),et=document.getElementById("card-error-text");
+      if(sk) sk.style.display="none";
+      if(pr) pr.classList.add("hidden");
+      if(er) er.style.display="flex";
+      if(et) et.textContent=msg;
+    }
+    function applyCard(data,meta){
+      const el=id=>document.getElementById(id);
+      if(el("card-move-meta")) el("card-move-meta").textContent="Move "+meta.num+" · "+(meta.color==="w"?"White":"Black")+" Played";
+      if(el("card-move-san")) el("card-move-san").textContent=data.move||meta.san;
+      const cp=data.cp_loss;
+      if(el("card-cp-loss")){el("card-cp-loss").textContent=cp!=null&&cp>0?"-"+cp+" cp":"0 cp";el("card-cp-loss").className="font-notation-mono text-headline-sm font-bold leading-tight "+(cp>=100?"text-error":"text-tertiary");}
+      const loss=cp||0,qp=el("card-quality-pill"),qi=el("card-quality-icon"),qt=el("card-quality-text");
+      if(data.is_blunder||loss>=300){if(qp)qp.className="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-error/15 text-error font-label-sm text-label-sm uppercase tracking-wider font-bold";if(qi)qi.textContent="dangerous";if(qt)qt.textContent="Blunder";}
+      else if(loss>=100){if(qp)qp.className="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-yellow-500/15 text-yellow-400 font-label-sm text-label-sm uppercase tracking-wider font-bold";if(qi)qi.textContent="warning";if(qt)qt.textContent="Mistake";}
+      else if(loss>=50){if(qp)qp.className="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-yellow-500/10 text-yellow-300 font-label-sm text-label-sm uppercase tracking-wider font-bold";if(qi)qi.textContent="info";if(qt)qt.textContent="Inaccuracy";}
+      else{if(qp)qp.className="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-tertiary/15 text-tertiary font-label-sm text-label-sm uppercase tracking-wider font-bold";if(qi)qi.textContent=loss===0?"star":"check_circle";if(qt)qt.textContent=loss===0?"Best Move":"Good Move";}
+      const tax=data.taxonomy||"none",motif=tax.replace(/_/g," ").split(" ").map(w=>w.charAt(0).toUpperCase()+w.slice(1)).join(" ");
+      if(el("card-motif-text")) el("card-motif-text").textContent=motif;
+      if(el("card-motif-icon")){const icons={fork:"electric_bolt",pin:"push_pin",mate:"flag",skewer:"linear_scale",trapped:"lock",hanging:"warning"};const k=Object.keys(icons).find(k=>tax.includes(k));el("card-motif-icon").textContent=icons[k]||"auto_awesome";}
+      if(el("card-commentary-text")) el("card-commentary-text").textContent=data.commentary||"No commentary generated.";
+      if(el("card-best-move")){const ev=data.eval_after!=null?(data.eval_after>0?"+":"")+(data.eval_after/100).toFixed(2):"";el("card-best-move").textContent=data.best_move?data.best_move+(ev?" ("+ev+")":""):"N/A";}
+      evalBar(data.eval_after!=null?data.eval_after:null);
+    }
+    async function fetchComment(fen,move,num,color){
+      if(AppState.abortController) AppState.abortController.abort();
+      AppState.abortController=new AbortController();
+      setLoading(true);
+      try{
+        const r=await fetch(API_BASE_URL+"/v1/commentary",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({fen,move,depth:18,mode:"deep"}),signal:AppState.abortController.signal});
+        if(!r.ok) throw new Error("HTTP "+r.status+": "+await r.text());
+        const data=await r.json();
+        setLoading(false);
+        applyCard(data,{num,color,san:move});
+      }catch(e){if(e.name==="AbortError")return;setError("Backend unreachable at "+API_BASE_URL+"/v1/commentary ("+e.message+")");}
+    }
+    function navTo(idx){
+      const moves=AppState.gameMoves;
+      if(!moves.length) return;
+      idx=Math.max(-1,Math.min(moves.length-1,idx));
+      AppState.currentMoveIndex=idx;
+      const f=document.getElementById("btn-first-move"),p=document.getElementById("btn-prev-move"),n=document.getElementById("btn-next-move"),l=document.getElementById("btn-last-move");
+      if(f) f.disabled=idx<=-1; if(p) p.disabled=idx<=-1; if(n) n.disabled=idx>=moves.length-1; if(l) l.disabled=idx>=moves.length-1;
+      const mi=document.getElementById("eval-move-info");
+      if(idx===-1){
+        const fen=moves[0].fenBefore;
+        AppState.currentFen=fen;AppState.lastMoveSquares={from:null,to:null};
+        renderBoard(fen,AppState.isFlipped,null);evalBar(null);
+        if(mi) mi.textContent="Start Position";
+        const fi=document.getElementById("fen-input"),mv=document.getElementById("move-input");
+        if(fi) fi.value=fen; if(mv) mv.value="";
+        const ct=document.getElementById("card-commentary-text"),sm=document.getElementById("card-move-san");
+        if(ct) ct.textContent="Step forward with the Next button or arrow key to analyze moves.";
+        if(sm) sm.textContent="Starting Position";
+        return;
+      }
+      const m=moves[idx];
+      AppState.currentFen=m.fenAfter;AppState.lastMoveSquares={from:m.from,to:m.to};
+      renderBoard(m.fenAfter,AppState.isFlipped,AppState.lastMoveSquares);
+      if(mi) mi.textContent="Move "+m.num+" ("+(idx+1)+"/"+moves.length+")";
+      const fi=document.getElementById("fen-input"),mv=document.getElementById("move-input");
+      if(fi) fi.value=m.fenBefore; if(mv) mv.value=m.num+(m.color==="w"?".":"...")+" "+m.san;
+      fetchComment(m.fenBefore,m.san,m.num,m.color);
+    }
+    function loadPgn(pgn){
+      if(typeof Chess==="undefined"){console.error("chess.js not loaded");return false;}
+      const p=new Chess();
+      if(!p.load_pgn(pgn.trim())){
+        const s=document.getElementById("pgn-status-msg");
+        if(s){s.textContent="Invalid PGN.";s.className="font-label-sm text-[11px] text-error font-semibold";}
+        return false;
+      }
+      const hist=p.history({verbose:true});
+      if(!hist.length) return false;
+      const replay=new Chess(),moves=[];
+      for(let i=0;i<hist.length;i++){
+        const mv=hist[i],fenBefore=replay.fen();
+        replay.move(mv);
+        moves.push({index:i,num:Math.floor(i/2)+1,color:mv.color,san:mv.san,from:mv.from,to:mv.to,fenBefore,fenAfter:replay.fen()});
+      }
+      AppState.gameMoves=moves;
+      const s=document.getElementById("pgn-status-msg");
+      if(s){s.textContent=moves.length+" moves loaded.";s.className="font-label-sm text-[11px] text-tertiary font-semibold";}
+      const drawer=document.getElementById("pgn-drawer");
+      setTimeout(()=>{if(drawer) drawer.style.display="none";},500);
+      navTo(0);
+      return true;
+    }
+    document.addEventListener("DOMContentLoaded",()=>{
+      renderBoard(AppState.currentFen,AppState.isFlipped,null);
+      const drawer=document.getElementById("pgn-drawer");
+      document.getElementById("btn-pgn-toggle")?.addEventListener("click",()=>{
+        if(!drawer) return;
+        drawer.style.display=(drawer.style.display==="none"||!drawer.style.display)?"flex":"none";
+      });
+      document.getElementById("btn-close-pgn")?.addEventListener("click",()=>{if(drawer) drawer.style.display="none";});
+      document.getElementById("btn-sample-opera")?.addEventListener("click",()=>{const ta=document.getElementById("pgn-textarea");if(ta)ta.value=SAMPLE_PGNS.opera;loadPgn(SAMPLE_PGNS.opera);});
+      document.getElementById("btn-sample-fork")?.addEventListener("click",()=>{const ta=document.getElementById("pgn-textarea");if(ta)ta.value=SAMPLE_PGNS.fork;loadPgn(SAMPLE_PGNS.fork);});
+      document.getElementById("btn-load-pgn-submit")?.addEventListener("click",()=>{const ta=document.getElementById("pgn-textarea");if(ta)loadPgn(ta.value);});
+      document.getElementById("btn-first-move")?.addEventListener("click",()=>navTo(-1));
+      document.getElementById("btn-prev-move")?.addEventListener("click",()=>navTo(AppState.currentMoveIndex-1));
+      document.getElementById("btn-next-move")?.addEventListener("click",()=>navTo(AppState.currentMoveIndex+1));
+      document.getElementById("btn-last-move")?.addEventListener("click",()=>navTo(AppState.gameMoves.length-1));
+      ["btn-flip-board","btn-flip-top"].forEach(id=>{document.getElementById(id)?.addEventListener("click",()=>{AppState.isFlipped=!AppState.isFlipped;renderBoard(AppState.currentFen,AppState.isFlipped,AppState.lastMoveSquares);});});
+      window.addEventListener("keydown",e=>{
+        if(e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA") return;
+        if(e.key==="ArrowLeft") navTo(AppState.currentMoveIndex-1);
+        else if(e.key==="ArrowRight") navTo(AppState.currentMoveIndex+1);
+        else if(e.key==="f"||e.key==="F"){AppState.isFlipped=!AppState.isFlipped;renderBoard(AppState.currentFen,AppState.isFlipped,AppState.lastMoveSquares);}
+      });
+      document.getElementById("btn-analyze")?.addEventListener("click",()=>{
+        const fen=(document.getElementById("fen-input")||{}).value?.trim();
+        const raw=(document.getElementById("move-input")||{}).value?.trim();
+        if(!fen||!raw) return;
+        const move=raw.replace(/^\d+\.+\s*/,"").replace(/[?!#+]+$/,"").trim();
+        if(!move) return;
+        AppState.currentFen=fen;AppState.lastMoveSquares={from:null,to:null};
+        renderBoard(fen,AppState.isFlipped,null);
+        fetchComment(fen,move,1,fen.split(" ")[1]||"w");
+      });
+      document.getElementById("btn-retry-commentary")?.addEventListener("click",()=>{
+        if(AppState.currentMoveIndex>=0&&AppState.gameMoves[AppState.currentMoveIndex]){
+          const m=AppState.gameMoves[AppState.currentMoveIndex];
+          fetchComment(m.fenBefore,m.san,m.num,m.color);
+        }
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-lg"><div class="w-full px-gutter flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface font-medium">ChessMind</span><span class="text-outline">·</span><span>The Grandmaster Analytical Companion</span></div><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Stockfish 16.1 WASM Deep Engine</span><span class="font-notation-mono text-notation-mono text-outline-variant">© 2025</span></div></div></footer></body></html>

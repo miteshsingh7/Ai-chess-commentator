@@ -1,0 +1,29 @@
+.env
+.env.*
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+dist/
+build/
+*.egg-info/
+.DS_Store
+
+# Large model weights and Kaggle run outputs
+.kaggle_output/
+.kaggle_output_v9/
+.kaggle_output_v10/
+.stage5_output/
+.stage5_output_v10/
+.stage5_output_v10_max150/
+data/phi35_adapter_clean/
+*.safetensors
+*.bin
+*.pt
+
+# Local scratch and space exports
+scratch_pieces.json
+hf_space/
+*.log
+.smoke_test_output*

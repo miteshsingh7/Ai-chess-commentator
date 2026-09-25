@@ -1,0 +1,39 @@
+# Training configuration for Phi-3.5-mini-instruct (3.8B, MIT License)
+model_id: "microsoft/Phi-3.5-mini-instruct"
+train_file: "data/commentary_sft_train.jsonl"
+val_file: "data/commentary_sft_val.jsonl"
+output_dir: "models/phi35_chess_commentator"
+max_seq_length: 512
+
+# LoRA parameters
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+target_modules:
+  - "q_proj"
+  - "k_proj"
+  - "v_proj"
+  - "o_proj"
+  - "gate_proj"
+  - "up_proj"
+  - "down_proj"
+
+# Optimization tuned for single Kaggle GPU (T4 16GB / A100 40GB)
+per_device_train_batch_size: 2
+per_device_eval_batch_size: 2
+gradient_accumulation_steps: 8
+learning_rate: 0.0002
+num_train_epochs: 3
+weight_decay: 0.01
+warmup_ratio: 0.03
+lr_scheduler_type: "cosine"
+optim: "paged_adamw_8bit"
+
+# Runtime
+seed: 42
+logging_steps: 10
+save_strategy: "epoch"
+evaluation_strategy: "epoch"
+gradient_checkpointing: true
+fp16: false
+bf16: false

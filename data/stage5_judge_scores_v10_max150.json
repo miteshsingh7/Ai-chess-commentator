@@ -1,0 +1,1666 @@
+[
+  {
+    "index": 0,
+    "motif": "hanging_piece",
+    "move_san": "Bxe5",
+    "fen": "3rr1k1/pb2q1b1/1p2p2p/3nN1p1/1P2Q3/1B5P/P2B1PP1/1R2R1K1 b - - 0 25",
+    "candidate_commentary": "Black's move g7xe5 is a tactical error as it loses material without any compensation; White can play Nf4, exploiting the pin on the pinned knight on f6 and the vulnerable hanging bishop on g7. The best move for Black would have been d5xf4, attacking the bishop and gaining a tempo by forcing White to make a defensive move. The move g7xe5 is a mistake because it allows White to gain material advantage without any immediate threat to White's position. The tactical motif here is the hanging piece, as Black's bishop on g7 is poorly defended and can be easily targeted by White's knight",
+    "reference_commentary": "A critical oversight in the middlegame. Bxe5 carelessly leaves an essential piece en prise without sufficient protection. The tactical refutation is swift, severely compromising the structural integrity of the position. The engine identifies Nf4 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 2,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 2.0,
+      "feedback": "The commentary contains severe factual errors, claiming a pin on a non-existent knight on f6 and misidentifying the hanging piece as the bishop on g7 (which just moved). It fails to correctly explain that the move leaves the queen or other pieces en prise, contradicting the provided tactical motif and best move."
+    }
+  },
+  {
+    "index": 1,
+    "motif": "none",
+    "move_san": "f2",
+    "fen": "5r2/p7/2k5/8/3R4/P1P1pp1P/1P6/5K2 b - - 3 40",
+    "candidate_commentary": "Black moves pawn from f7 to f2, attempting to activate the king and possibly open lines for the rook on f8. However, this is a flawed move as it weakens the king's own pawn structure without creating immediate threats or improving piece activity. The move doesn'nor take advantage of White's active pieces and doesn't contribute to Black's development or king safety. White can maintain a passive position while preparing to exploit the weaknesses in Black's camp. Without concrete tactical motifs, this move doesn't serve a clear strategic purpose.",
+    "reference_commentary": "f2 demonstrates precise calculation, consolidating the position and pressing the advantage smoothly. This principled advance cements a durable advantage heading into the next phase of the game.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incorrect, misidentifying the move as f7-f2 instead of f3-f2, and falsely labels a good move as a blunder. It also contains a typo ('doesn'nor') and fails to recognize the actual strategic consolidation."
+    }
+  },
+  {
+    "index": 2,
+    "motif": "mistake_other",
+    "move_san": "f5",
+    "fen": "1r3rk1/p4pbp/1qp3pn/3p4/3P2P1/P1P2N1P/1P2QP2/R1B1R1K1 b - - 6 19",
+    "candidate_commentary": "Black's f5 move is a critical error, failing to recognize the latent threat posed by White'settings up a deadly discovered attack. The move f7f5 weakens the kingside pawn structure and opens up the f-file for potential rook penetration. White can play Qxf5, followed by Qxf8+ and Rxf8, leading to a devastating attack on Black's king. The best move would have been f7f6, reinforcing the pawn structure and avoiding immediate tactical vulnerabilities. This blunder significantly reduces Black's chances of maintaining a solid defensive position.",
+    "reference_commentary": "A costly inaccuracy. f5 compromises piece harmony and invites an immediate tactical counter. The resulting sequence costs roughly 137 centipawns and gives the opponent a clear path forward. The engine identifies f7f6 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 2,
+      "naturalness": 2,
+      "conciseness": 4,
+      "overall": 2.25,
+      "feedback": "The commentary contains a severe factual error: White's queen is on f2, not f5, making the suggested line 'Qxf5' impossible. Additionally, the phrase 'White'settings' is a typo that disrupts readability."
+    }
+  },
+  {
+    "index": 3,
+    "motif": "hanging_piece",
+    "move_san": "Kxh5",
+    "fen": "8/8/8/3b1PKp/7P/4k3/1p6/1B5R w - - 9 55",
+    "candidate_commentary": "White's move Kxh5 is a blunder as it allows Black to gain material advantage without any immediate threat. By capturing on h5, White loses control over the h-file, which could be used for a potential attack on White's king or to open lines for other pieces. The tactical motif here is the hanging piece, as Black's pawn on h6 is now free to advance without immediate repercussions, especially after White's king moves away from h5. The best move for White, according to the engine, would be Rh2, aiming to control the h-file and prevent Black from easily advancing their pawn or creating threats. By playing Rh",
+    "reference_commentary": "Kxh5 drops material directly, overlooking the immediate vulnerability created on the board. This oversight drastically swings the momentum and leaves the king or pieces dangerously exposed. The engine identifies Rh2 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 3,
+      "conciseness": 2,
+      "overall": 2.25,
+      "feedback": "The commentary is factually flawed, incorrectly claiming Black gains material when the blunder actually loses material, and it hallucinates a Black pawn on h6 that does not exist in the position. The text is also truncated and fails to clearly explain the specific tactical refutation."
+    }
+  },
+  {
+    "index": 4,
+    "motif": "pin",
+    "move_san": "Bxg4",
+    "fen": "2k3rr/pp1n1n2/2p2P2/4P2p/1N3BbP/2P5/4B1P1/1R3RK1 w - - 1 28",
+    "candidate_commentary": "White's move Bxg4 exploits the pin on the Knight on d7, which is prevented from moving due to its duty to protect the Bishop on g4. This pin also indirectly protects the King on c8 by limiting the Knight's mobility. The tactical justification here is to increase pressure on Black's position, potentially leading to a double attack on the Knight on d7 and the Bishop on g4 if Black is not careful. However, the move is risky as it exposes White's own Bishop to potential counterplay from Black's pawns on d6 and e5, which could disrupt the pin and create threats against White's King. The",
+    "reference_commentary": "Bxg4 is top-tier play, combining defensive solidity with purposeful piece activation across the board. By coordinating the pieces efficiently, this maneuver neutralizes potential enemy counter-chances.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary is factually incoherent, describing a non-existent pin on d7 and a Bishop on g4 that is the target of the capture, not a protected piece. It also hallucinates pawns on d6 and e5 that do not exist in the position."
+    }
+  },
+  {
+    "index": 5,
+    "motif": "missed_mate",
+    "move_san": "Qxf6",
+    "fen": "1r5k/5Qp1/5q1p/3B4/p1P3P1/7P/P4P2/4R1K1 w - - 3 40",
+    "candidate_commentary": "White's Qxf6 was a flawed attempt to win material, as it overlooks the tactical motif of a forced mate. The correct response by Black, Re8+, puts White in a defensive position, forcing a check that leads to a forced mate in two moves (Rxe8 Qxe8+ followed by Qxe8+). White's move failed to account for the latent threat posed by Black's queen and rook coordination, which is a critical oversight in this position. The best move for White would have been to avoid the tactical pitfall and instead focus on consolidating their position or creating counterplay.",
+    "reference_commentary": "Qxf6 looks tempting to eliminate Black\u2019s queen, but it abandons the forced mate that White already has. By playing 1.Rxe8+! the rook checks along the eighth rank, and Black cannot interpose, block, or capture because the queen on f7 defends e8 and the rook on b8 would be lost after 2.Qxe8+. After the queen trade White forfeits this decisive combination, leaving only a material edge (+634\u202fcp) instead of a forced win.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually inverted, incorrectly identifying the move as a Black response and misattributing the forced mate to Black rather than White. It fails to recognize that White missed the winning Rxe8+ combination, instead describing a non-existent defensive scenario."
+    }
+  },
+  {
+    "index": 6,
+    "motif": "middlegame_calculation",
+    "move_san": "g6",
+    "fen": "rnbqkb1r/pppppppp/5n2/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+    "candidate_commentary": "Black's move g7-g6 is a mistake as it weakens the dark squares around Black'yalya, which could be exploited by White in the middlegame. Instead, developing the knight to f6 with e7-f6 would have been stronger, allowing for better control of the center and preparing for castling. White can take advantage of this by pushing d2-d4, gaining central dominance and opening lines for their pieces. This misstep by Black could lead to a significant positional disadvantage in the middlegame.",
+    "reference_commentary": "By playing \u2026g6 Black relinquishes the crucial d5\u2011e4 central tension and creates a permanent hole on f5, allowing White to consolidate the pawn on e4 with a simple Nxe4. The engine\u2011preferred \u2026Nxe4 would have seized the pawn and opened lines toward Black\u2019s king, while \u2026g6 merely wastes a tempo and hands White a clear material edge. Consequently the position swings from a modest +0.8 advantage for Black to \u20131.1, a classic missed\u2011sacrifice blunder.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 4,
+      "overall": 2.0,
+      "feedback": "The commentary is factually incoherent, referencing a non-existent 'Black'yalya' and suggesting an illegal or nonsensical move (e7-f6). It completely misses the tactical reality that White has already played d4 and that the critical error is failing to capture the e4 pawn."
+    }
+  },
+  {
+    "index": 7,
+    "motif": "endgame_calculation",
+    "move_san": "h3+",
+    "fen": "8/1R6/P7/8/5Pkp/8/6K1/8 b - - 0 69",
+    "candidate_commentary": "Black's attempt to push h3+ is a mistake as it weakens the king'z\u00f3ne without gaining any concrete advantage or creating immediate threats. White can simply ignore the pawn move and continue to improve their position, especially by playing g4xf5, which would attack the Black king and potentially lead to a favorable endgame scenario for White. The move h3+ is a strategic error as it doesn't contribute to Black's plan or address the imbalances in the position. White should instead focus on activating their king and creating passed pawns to increase the pressure on Black.",
+    "reference_commentary": "h3+ misjudges the concrete demands of the endgame, conceding a significant advantage of 237 centipawns. The resulting sequence costs roughly 237 centipawns and gives the opponent a clear path forward. The engine identifies g4f5 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incoherent, confusing the side to move (Black) with White and misidentifying the best move (g4f5 is a Black move, not White's). It fails to explain the tactical refutation or the specific endgame calculation error, instead offering generic and incorrect strategic advice."
+    }
+  },
+  {
+    "index": 8,
+    "motif": "none",
+    "move_san": "O-O",
+    "fen": "r1bqk2r/pppnppbp/3p1np1/8/2P5/2N2NP1/PP1PPPBP/R1BQK2R w KQkq - 2 6",
+    "candidate_commentary": "White's move O-O (castling kingside) aims to safeguard the king by connecting it with the rook on f1, which could potentially become active in the future. This move is generally considered strong as it follows basic opening principles of king safety and rook activation. However, without concrete tactical threats or immediate strategic benefits, it's a standard consolidation move in this position. The engine'ciuation suggests a loss of central control and material for White, but it doesn't directly result from this particular move. White should now focus on completing development, controlling the center, and preparing for potential pawn breaks or piece exchanges.",
+    "reference_commentary": "O-O demonstrates precise calculation, consolidating the position and pressing the advantage smoothly. By coordinating the pieces efficiently, this maneuver neutralizes potential enemy counter-chances.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary contains a severe factual hallucination, claiming the engine suggests a loss of material and central control for White, which directly contradicts the provided 'GOOD' evaluation. Additionally, the text is overly verbose and includes a typo ('engine'ciuation'), failing to meet the conciseness and accuracy requirements."
+    }
+  },
+  {
+    "index": 9,
+    "motif": "skewer",
+    "move_san": "Rb8+",
+    "fen": "2k2r2/8/1R1P4/p1p1p3/b3P3/2P5/6PP/1R5K w - - 0 40",
+    "candidate_commentary": "White's rook move to b8+ is a tactical skewer maneuver targeting the black king and rook on f8. By skewering, White aims to remove both pieces in one turn, as the rook on f8 is pinned to the black king due to the potential threat from White's rook on b8. This move is strong as it increases White's material advantage and puts pressure on Black's position. The skewer also opens up lines for potential follow-up attacks, such as a discovered check or a direct assault on the black king if it moves. The engine evaluation of loss: 40 centipawns suggests that White's position is significantly better",
+    "reference_commentary": "Rb8+ is an energetic, high-level move that strengthens piece coordination and maintains a firm positional grip. By coordinating the pieces efficiently, this maneuver neutralizes potential enemy counter-chances.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary is factually incoherent, claiming a skewer removes two pieces in one turn and misidentifying the tactical geometry. It also violates the rule against mentioning engine evaluations directly."
+    }
+  },
+  {
+    "index": 10,
+    "motif": "trapped_bishop",
+    "move_san": "Re6+",
+    "fen": "R7/2p1R2p/5k1r/1p1P2pq/2b4B/2P3P1/5PB1/6K1 w - - 4 32",
+    "candidate_commentary": "White's move Re6+ is a tactical error as it inadvertently allows Black to execute a discovered attack on the Bishop on h4, which is now trapped by its own pieces. The move fails to consider the strategic importance of maintaining piece activity and coordination. The best move would have been e7c7, which would have preserved the Bishop's activity and potentially led to a more favorable position for White. The immediate consequence of Re6+ is the loss of tempo and the weakening of White's position without gaining any tangible advantage.",
+    "reference_commentary": "Re6+ relinquishes control of the position, allowing the opponent to exploit concrete weaknesses. The resulting sequence costs roughly 154 centipawns and gives the opponent a clear path forward. The engine identifies e7c7 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 3,
+      "conciseness": 4,
+      "overall": 2.75,
+      "feedback": "The commentary hallucinates a 'discovered attack' and claims the bishop is trapped by its own pieces, which is factually incorrect and contradicts the position. It fails to explain the concrete tactical refutation or why Re6+ specifically loses material compared to the best move."
+    }
+  },
+  {
+    "index": 11,
+    "motif": "none",
+    "move_san": "Kh7",
+    "fen": "3B4/8/7k/6R1/8/7P/5PPK/8 b - - 0 53",
+    "candidate_commentary": "Black moves pawn to h7 attempting to promote to a queen, aiming to create a passed pawn and increase pressure on the board. However, this move is flawed as it doesn'nor address the immediate threats and doesn't contribute to Black's development or king safety. White can maintain a solid position, focusing on piece activity and king safety, while Black should concentrate on improving piece placement and preventing pawn promotion by White. Without a clear tactical motif, this move is passive and doesn't contribute to Black's strategic goals.",
+    "reference_commentary": "Kh7 demonstrates precise calculation, consolidating the position and pressing the advantage smoothly. The position remains firmly in hand, showcasing accurate positional judgment.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 1,
+      "conciseness": 2,
+      "overall": 1.25,
+      "feedback": "The commentary is factually incoherent, hallucinating a pawn on h6 that does not exist (the move is a king move) and misidentifying the piece type. It also contradicts the evaluation by calling a good move 'flawed' and 'passive' without any basis in the position."
+    }
+  },
+  {
+    "index": 12,
+    "motif": "mistake_other",
+    "move_san": "e5",
+    "fen": "rnbq1rk1/ppp1ppnp/3p2pQ/8/3P2PP/2N2P2/PPP1P3/R3KBNR b KQ - 0 9",
+    "candidate_commentary": "Black's move e5, attempting to challenge White'settings central control, is a common opening strategy. However, this move is flawed as it overlooks the latent threat posed by White's queen side bishop, which could potentially pin the knight on f6, leading to doubled pawns after f6xf7. A better strategic move would be f7-f6, aiming to break the pin and gain a tempo by attacking the bishop. This would not only alleviate the immediate pressure but also open lines for Black's pieces to become more active. The INACCURACY here lies in failing to recognize the tactical motif of the pinning bishop and the associated",
+    "reference_commentary": "e5 is top-tier play, combining defensive solidity with purposeful piece activation across the board. By coordinating the pieces efficiently, this maneuver neutralizes potential enemy counter-chances.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary is factually incoherent, referencing a non-existent 'queen side bishop' and impossible tactical sequences (f6xf7) that do not match the position. It fails to identify the actual strategic flaw of e5 and ends with a truncated, nonsensical sentence."
+    }
+  },
+  {
+    "index": 13,
+    "motif": "none",
+    "move_san": "Rad8",
+    "fen": "r4rk1/ppq2pbp/2n2np1/4p3/8/2NBB3/PP2QPPP/3RR1K1 b - - 1 16",
+    "candidate_commentary": "Black's move Rad8 by the queen attempts to increase pressure on the d-file and potentially exploit the somewhat exposed white king. However, this move is somewhat flawed as it doesn'nor immediately result in tactical threats due to the lack of immediate tactical motifs. Strategically, it opens up the possibility for Black to double rooks on the d-file if White doesn't respond appropriately, but it's not an urgent necessity at this stage. White should be cautious and consider moves like Bd3 or Qe2 to bolster the center and king's safety.",
+    "reference_commentary": "A sharp and principled choice. Rad8 seizes immediate central space and restricts the opponent's counterplay. This principled advance cements a durable advantage heading into the next phase of the game.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary contains a critical factual error by identifying the moving piece as the queen instead of the rook, and it incorrectly labels a good move as flawed. The evaluation sign is completely inverted, praising a blunder-like assessment for a principled positional move."
+    }
+  },
+  {
+    "index": 14,
+    "motif": "none",
+    "move_san": "Rhc7",
+    "fen": "6k1/pR5R/7p/8/8/6P1/r4PK1/8 w - - 2 39",
+    "candidate_commentary": "Rhc7 (h7c7) by White is a passive move that doesn'nor immediately address the threats or create tactical opportunities in this position. White's rook on c7 is not participating in the game, while Black's pawn on h7 is a potential back-rank threat. This move fails to improve White's position or counter Black's threats, indicating a strategic oversight rather than a tactical error. White should consider activating their pieces or addressing the potential back-rank issues to improve their position.",
+    "reference_commentary": "Rhc7 is an energetic, high-level move that strengthens piece coordination and maintains a firm positional grip. The position remains firmly in hand, showcasing accurate positional judgment.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incorrect, misidentifying a good move as a passive blunder and hallucinating a non-existent pawn on h7. It completely contradicts the engine evaluation and fails to recognize the strong positional coordination of the rooks."
+    }
+  },
+  {
+    "index": 15,
+    "motif": "checkmate",
+    "move_san": "Ng6#",
+    "fen": "r2qrk2/p2n2p1/b1pb1n1p/8/1p1P1N2/1Q3N1P/PP3PP1/R1B1R1K1 w - - 2 17",
+    "candidate_commentary": "White's move Ng6#, exploiting the pin on the f7 pawn by the Black king, which is unable to capture the knight due to the pinning rook on f1. This results in an immediate checkmate as the Black king has no legal moves left, and no Black piece can block or capture the attacking knight. The move is strong as it utilizes the pinning tactic to deliver a checkmate without any need for further moves, showcasing White's precise calculation and understanding of tactical motifs in chess.",
+    "reference_commentary": "The final strike. Ng6# concludes the struggle by trapping the enemy monarch with no escape. Every defensive interposition is eliminated, securing an immediate full point.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incorrect; there is no pin on the f7 pawn, and the rook is on e1, not f1. It fails to identify the actual mating mechanism (the knight covering escape squares and the queen's support) and hallucinates a tactical theme that does not exist."
+    }
+  },
+  {
+    "index": 16,
+    "motif": "fork",
+    "move_san": "Rxg6+",
+    "fen": "4Q3/p3r3/1pp1k1pR/5p2/4p1q1/8/PP3P2/5K2 w - - 4 47",
+    "candidate_commentary": "White's rook move to g6+ creates a tactical fork, simultaneously attacking the queen on g4 and the king on e6. This move is strong as it forces Black to respond to one of the threats, allowing White to potentially exploit the resulting imbalance. The fork is particularly potent here because it targets high-value pieces and the king, which could lead to significant material or positional advantages if Black fails to address the threats adequately. White's calculation demonstrates a keen understanding of tactical motifs, aiming to maximize pressure on Black's position.",
+    "reference_commentary": "White executes a decisive check by capturing the g6-pawn, forcing the black king to move and disrupting its defensive coordination. This aggressive rook lift maintains the initiative while keeping the black queen and rook under constant pressure. The move is the engine's top choice, preserving a winning advantage by denying Black any counterplay.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 3,
+      "conciseness": 4,
+      "overall": 2.75,
+      "feedback": "The commentary incorrectly identifies the tactical motif as a fork; the move is a simple check that wins a pawn and disrupts the king, not a simultaneous attack on two pieces. It also fails to mention the immediate material gain or the specific defensive disruption, relying on vague generalities instead of concrete positional facts."
+    }
+  },
+  {
+    "index": 17,
+    "motif": "none",
+    "move_san": "Qd2",
+    "fen": "1r1q1rk1/pp3bp1/1bp4p/3n4/3P1Q2/1PB2NPP/P4PB1/R4RK1 w - - 5 21",
+    "candidate_commentary": "Qd2 aims to reposition the queen towards the center and potentially target the weak on f4 pawn if Black doesn'eed solidify their pawn structure. While not immediately tactical, this move aligns with strategic principles of controlling the center and preparing for potential outposts or threats against Black's king. However, without concrete tactical motifs, it's crucial to assess the resulting position for potential weaknesses or opportunities. White must be cautious not to overcommit or leave vulnerabilities, especially considering Black's active pieces.",
+    "reference_commentary": "White repositions the queen to d2, a quiet but principled maneuver that avoids potential tactical skirmishes on the f-file. By vacating f4, White prepares to double rooks on the open f-file, leveraging the semi-open line to exert long-term pressure against Black\u2019s kingside. This prophylactic shift maintains the initiative while keeping the king safely tucked away behind the pawn shield.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 2.25,
+      "feedback": "The commentary contains a critical factual error by referring to a 'weak on f4 pawn' when the f4 square is occupied by White's own queen, which is moving away. It also fails to identify the key strategic purpose of vacating the f-file for rook doubling, instead offering vague and generic advice about center control."
+    }
+  },
+  {
+    "index": 18,
+    "motif": "middlegame_calculation",
+    "move_san": "h3",
+    "fen": "r2r2k1/pbp2ppp/3qpn2/2p1b3/2P1P3/2N2P2/PPQPB1PP/R1B1R2K w - - 3 16",
+    "candidate_commentary": "White's move h3 is a mistake as it weakens the king'yalai pawn structure without gaining any tangible benefits. It doesn't address the immediate threats or improve White's piece coordination. A better move would be c3, which would support the center and potentially allow for a timely d4, challenging Black's central pawn on e5 and opening lines for White's pieces. The tactical motif here involves recognizing the importance of central control and pawn structure integrity in the middlegame.",
+    "reference_commentary": "h3 relinquishes control of the position, allowing the opponent to exploit concrete weaknesses. This oversight drastically swings the momentum and leaves the king or pieces dangerously exposed. The engine identifies c3b5 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 2,
+      "naturalness": 2,
+      "conciseness": 4,
+      "overall": 2.25,
+      "feedback": "The commentary contains a severe hallucination ('king'yalai') and misidentifies the best move as c3 (a pawn move) instead of the knight move Nb5. It fails to recognize the specific tactical refutation or the correct piece involved in the optimal alternative."
+    }
+  },
+  {
+    "index": 19,
+    "motif": "middlegame_calculation",
+    "move_san": "Nc6",
+    "fen": "rnbqkbnr/pp2pppp/8/3p4/4P3/1Q6/PP1P1PPP/RNB1KBNR b KQkq - 1 4",
+    "candidate_commentary": "Black's move Nc6, intending to develop the knight to a more active square, is a standard opening principle. However, in this position, it's a mistake as it allows White to gain tempo with Be3, pinning Black'ciu Knight to the king and potentially leading to tactical opportunities in the middlegame. The best move would have been d5e4, challenging White's central pawn and opening lines for Black's pieces. This misstep by Black weakens control over the center and slows down piece development, which is crucial in the opening phase. White's Be3 not only increases pressure but also prepares for a potential pin on the f7 pa",
+    "reference_commentary": "An unfortunate misstep. Nc6 hands the initiative to the opponent and worsens the evaluation considerably. The resulting sequence costs roughly 226 centipawns and gives the opponent a clear path forward. The engine identifies d5e4 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 2,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 2.0,
+      "feedback": "The commentary contains severe factual errors, claiming a non-existent pin on the knight and referencing a typo ('Black'ciu'), while the text is cut off mid-sentence. It fails to accurately describe the tactical consequences of the move."
+    }
+  },
+  {
+    "index": 20,
+    "motif": "none",
+    "move_san": "Qd2",
+    "fen": "1r3rk1/ppp1nppp/8/q7/b2PP3/P1P3P1/5PBP/R1BQ1RK1 w - - 1 16",
+    "candidate_commentary": "White's move Qd2 aims to reposition the queen towards the center and potentially support a pawn push to d4, challenging Black'settings control in the center. While not immediately tactical, this move is strategically sound as it prepares for potential central pawn breakthroughs and aligns the queen with the bishop pair, which could prove advantageous in the middle to endgame. However, it's crucial to monitor Black's responses, as they may counteract White's strategy effectively.",
+    "reference_commentary": "An exemplary move in the middlegame. Qd2 proactively addresses tactical threats while improving active piece mobility. The position remains firmly in hand, showcasing accurate positional judgment.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 3,
+      "conciseness": 3,
+      "overall": 2.5,
+      "feedback": "The commentary contains a significant factual error by claiming the move supports a pawn push to d4, which is impossible as the pawn is already on d4. Additionally, the reference to a 'bishop pair' is misleading since White only has one bishop on the board."
+    }
+  },
+  {
+    "index": 21,
+    "motif": "knight_fork",
+    "move_san": "Nc5+",
+    "fen": "8/2kn1p2/8/3P4/R7/2PKN3/1r6/8 b - - 14 70",
+    "candidate_commentary": "Black's move Nc5+ is a strong tactical play, exploiting the knight fork by attacking both the Rook on a4 and the King on d3 simultaneously. This creates immediate pressure on White, forcing them to address the threats before Black can consolidate their advantage. The fork is particularly potent here as it not only disrupts White's coordination but also opens up potential for further tactical strikes, especially if White's pieces are not quickly mobilized to defend against the dual threats. The move's effectiveness is underscored by the GOOD evaluation from the engine, indicating a significant advantage for Black. The knight's placement on c5 is optimal",
+    "reference_commentary": "Black\u2019s knight check to c5 is a precise forcing move that immediately activates the king and disrupts White\u2019s coordination. By delivering check, Black prevents White from consolidating or advancing the passed pawn, maintaining the initiative in this sharp endgame. This energetic maneuver keeps the position dynamic and ensures Black\u2019s pieces remain active against White\u2019s king.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 2.0,
+      "feedback": "The commentary contains a critical factual error: a knight on c5 does not attack the rook on a4 (it attacks a4's diagonal neighbors or b7/d7, but not a4 itself), and it is not a fork of the king and rook. Additionally, the text is overly verbose, repetitive, and explicitly references the engine evaluation, violating the naturalness and conciseness constraints."
+    }
+  },
+  {
+    "index": 22,
+    "motif": "checkmate",
+    "move_san": "Nf7#",
+    "fen": "2r3rk/6pp/p6N/1p1p4/2pq4/P6P/1P3PP1/4R1K1 w - - 0 37",
+    "candidate_commentary": "White's move Nf7#, exploiting the pin on the f7 pawn by the black queen, results in an immediate checkmate. The knight's jump to f7 is a tactical oversight by Black, as it fails to address the direct threat posed by White's knight. The pin prevents Black's pawn from escaping, and with no other pieces to block or capture the attacking knight, the checkmate is delivered instantly. This demonstrates a critical strategic failure by Black to recognize and counteract the tactical motif presented by White.",
+    "reference_commentary": "Checkmate! Nf7# delivers an immediate and game-ending blow against the helpless king. The coordinated geometry leaves no squares for the king and ends the battle on the spot.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incoherent, incorrectly describing a checkmate as a 'tactical oversight' and misidentifying the tactical mechanism (there is no pin on f7; the mate is a direct knight check). It fails to explain why the move is good, instead confusing the reader with nonsensical strategic claims."
+    }
+  },
+  {
+    "index": 23,
+    "motif": "none",
+    "move_san": "Nc5",
+    "fen": "r3r1k1/1b1npp1p/p1p1q1p1/1p2P3/P1p1PP1B/2P4P/2Q1B1P1/3RR1K1 b - - 0 18",
+    "candidate_commentary": "Black's move Nc5 (d7c5) opens up the possibility of doubling White'z\u00f3pa pawns on the d-file if Black can successfully create a situation where White's pawns are locked behind each other. Strategically, this move aims to increase pressure on White's queenside and potentially open lines for Black's pieces to become more active. However, it's a double-edged situation as it also exposes the knight to potential attacks and doesn't immediately result in tactical consequences. The move is strong in terms of strategic intent but requires careful follow-up to avoid falling into a passive or losing position.",
+    "reference_commentary": "Black\u2019s knight maneuvers to c5, a strong central outpost that actively contests the e4 square and prepares to support a future ...b4 pawn push. This energetic repositioning maximizes the piece\u2019s influence in the middlegame, effectively challenging White\u2019s control over key central squares. By occupying this ideal square, Black maintains a balanced position while generating dynamic counterplay against White\u2019s setup.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incoherent, referencing a non-existent 'd-file' pawn structure and a typo ('White'z\u00f3pa'), while failing to identify the actual strategic purpose of the knight's central outpost. It contradicts the 'GOOD' evaluation by suggesting the move is risky or passive rather than energetic and principled."
+    }
+  },
+  {
+    "index": 24,
+    "motif": "mistake_other",
+    "move_san": "b3",
+    "fen": "1r1qk2r/pppn1pp1/3bbn1p/8/8/2N2NP1/PP1PPPBP/R1BQ1RK1 w k - 0 9",
+    "candidate_commentary": "White's pawn move to b3 is a mistake as it weakens the pawn structure on the queenside and doesn'nocostly concedes control of the d4 square to Black. Instead, White should have played d2-d4, challenging Black's central pawn and opening lines for the bishop and queen. This would have been more strategically sound, aiming to control the center and potentially create threats against Black's king side. The move b3 doesn't contribute to White's development or central control, which are crucial in the opening phase.\n\nTactical Motif: Mistake_other - White's move doesn't create immediate threats or",
+    "reference_commentary": "b3 is an energetic, high-level move that strengthens piece coordination and maintains a firm positional grip. It maintains harmonious board control and keeps the opponent under continuous pressure.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 1,
+      "conciseness": 2,
+      "overall": 1.75,
+      "feedback": "The commentary contains a severe typo ('doesn'nocostly') and cuts off mid-sentence, making it incoherent. It also incorrectly claims b3 weakens the pawn structure, which is factually dubious in this context, and fails to clearly articulate the specific strategic loss compared to d4."
+    }
+  },
+  {
+    "index": 25,
+    "motif": "hanging_piece",
+    "move_san": "Kxg3",
+    "fen": "5rk1/pp1N2p1/2p2q1p/3r4/2Q5/1P4bP/P6K/3R1R2 w - - 0 29",
+    "candidate_commentary": "White's move Kxg3 is a blunder as it allows Black to execute a tactical motif known as a hanging piece, which in this case is the bishop on h2. By taking on g3, White loses material control and opens up the h-file for potential penetration by Black's rooks. The engine's best move Kh1 would have been a strategic retreat, avoiding the loss of material and keeping the king safe while still maintaining pressure on Black's position. The immediate consequence of White's move is a loss in material without adequate compensation, leading to a disadvantageous position as indicated by the engine's evaluation. The tactical",
+    "reference_commentary": "A painful tactical slip. By playing Kxg3, a vital defender is compromised and left completely hanging. The resulting sequence costs roughly 469 centipawns and gives the opponent a clear path forward. The engine identifies Kh1 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary is factually incoherent, incorrectly identifying the hanging piece as a bishop on h2 (which is occupied by a pawn) and mischaracterizing the tactical motif. It also ends with a truncated sentence, failing to provide a complete or accurate explanation of the blunder."
+    }
+  },
+  {
+    "index": 26,
+    "motif": "knight_fork",
+    "move_san": "Nf4+",
+    "fen": "8/pp2qpk1/2p2N1p/1n1nPPPQ/1P6/PB5P/6K1/8 b - - 0 38",
+    "candidate_commentary": "Black's move Nf4+ is a strong tactical play, exploiting a knight fork by attacking the White queen on h5 and the pawn on h3, while also putting pressure on the White king on g2. This fork creates immediate threats that White must address, potentially leading to material loss or a compromised king position if not properly countered. The move demonstrates Black's understanding of tactical motifs and the power of coordinated piece activity. White must now find a way to defend against this multi-pronged threat without losing material or allowing further tactical opportunities to arise.",
+    "reference_commentary": "A calm, master-level decision. Nf4+ reinforces key central squares and prepares harmonious long-term development. This principled advance cements a durable advantage heading into the next phase of the game.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary is factually incorrect; the knight on f4 does not attack the queen on h5 or the pawn on h3, nor does it fork them. It hallucinates a tactical threat that does not exist in the position."
+    }
+  },
+  {
+    "index": 27,
+    "motif": "none",
+    "move_san": "Qg4",
+    "fen": "3r1rk1/1p4b1/p3p1n1/2p1q1Q1/2Pnp3/1P6/PB1P1PB1/3R1R1K w - - 2 24",
+    "candidate_commentary": "White's move Qg4, targeting Black'nor's king and attempting to exploit the pin on the black bishop on b1. This move is strategically sound as it increases pressure on Black's position without immediate tactical threats. However, it's crucial for White to follow up effectively, possibly by doubling rooks on the d-file or preparing for a potential discovered attack if Black's king moves away. The absence of immediate tactical motifs indicates that White should maintain this strategic pressure while being mindful of potential counterplay from Black's pieces.",
+    "reference_commentary": "An exemplary move in the middlegame. Qg4 proactively addresses tactical threats while improving active piece mobility. It maintains harmonious board control and keeps the opponent under continuous pressure.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary is factually incoherent, referencing a non-existent 'Black'nor' and a 'pin on the black bishop on b1' (where a White bishop resides). It fails to identify the actual tactical threat (Black's Qxe4) that the move addresses."
+    }
+  },
+  {
+    "index": 28,
+    "motif": "hanging_piece",
+    "move_san": "Ng2",
+    "fen": "r1q1k2r/pp2ppb1/2n5/2pN1bp1/2P2N1p/1P2PB2/P4P2/R1BQ1RK1 w kq - 0 17",
+    "candidate_commentary": "White's move Ng2 to f4 is a mistake as it allows Black to solidify their position without immediate threat. The knight's move doesn't contribute to White's development or control of the center, which is crucial in the opening phase. The best move, according to the engine, would be e3, which would support the center and allow for better coordination of White's pieces. Black's response Bd7 is a logical move, aiming to reroute the bishop to a more active square while also keeping an eye on the potentially weak f2 pawn. The tactical motif here is the hanging piece, as White's knight on f4 is not defended and",
+    "reference_commentary": "A painful tactical slip. By playing Ng2, a vital defender is compromised and left completely hanging. This oversight drastically swings the momentum and leaves the king or pieces dangerously exposed. The engine identifies e4 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary is factually incoherent, describing the move as 'Ng2 to f4' (reversing the direction) and citing a non-existent best move of e3. It fails to identify the specific tactical refutation (the hanging knight) and ends with an incomplete sentence."
+    }
+  },
+  {
+    "index": 29,
+    "motif": "mistake_other",
+    "move_san": "hxg6",
+    "fen": "3r1rk1/1pq1n1b1/p3p1p1/2p4P/2Pnp2Q/1P6/PB1P1PB1/3R1R1K w - - 0 22",
+    "candidate_commentary": "White's move hxg6 is a tactical error as it losyalso loses the h-pawn after Black plays Qh4+ followed by Qxh6. This move neglects the latent threat posed by Black's queen and rook coordination, which could result in a devastating attack on White's king. The best move would have been d2-d3, reinforcing the center and preparing to castle queenside, avoiding immediate tactical vulnerabilities. This move demonstrates a lack of foresight and strategic planning, leading to a significant material disadvantage.",
+    "reference_commentary": "hxg6 demonstrates precise calculation, consolidating the position and pressing the advantage smoothly. The position remains firmly in hand, showcasing accurate positional judgment.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incoherent, containing a typo ('losyalso') and hallucinating a non-existent tactical refutation (Qh4+ is illegal as the square is occupied by White's queen). It fails to explain the actual positional inaccuracy of the move."
+    }
+  },
+  {
+    "index": 30,
+    "motif": "none",
+    "move_san": "Qd1",
+    "fen": "r4rk1/ppp1q1bp/2n1b1p1/3Qpp2/2P4P/1P2PN2/PB2BPP1/R3K2R w KQ - 1 13",
+    "candidate_commentary": "White's move Qd1, aiming to reposition the queen towards the center and potentially target the vulnerable black king'orpawning after castling short. The move is strategically sound as it increases pressure on the black position without immediate tactical threats. However, it's crucial for White to follow up with careful maneuvering to avoid falling behind in development or becoming a target for Black's counterplay. The absence of immediate tactical motifs suggests a more positional approach, focusing on control and coordination.",
+    "reference_commentary": "A calm, master-level decision. Qd1 reinforces key central squares and prepares harmonious long-term development. This principled advance cements a durable advantage heading into the next phase of the game.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 2.0,
+      "feedback": "The commentary contains a severe factual error by claiming the move targets the 'vulnerable black king' when Black has not castled and the king is on e8, far from the queen's new square. Additionally, the text is overly verbose and includes a typo ('king'orpawning'), failing to meet the conciseness and naturalness requirements."
+    }
+  },
+  {
+    "index": 31,
+    "motif": "middlegame_calculation",
+    "move_san": "g4",
+    "fen": "6rk/8/2NP3p/p5q1/8/5p1P/PP1R1RP1/6K1 w - - 0 35",
+    "candidate_commentary": "White's pawn advance to g4 is a risky attempt to gain space on the kingside and potentially launch a pawn storm against Black'nor's king. However, this move is flawed as it weakens White's own king position by opening lines for Black's pieces to penetrate. The best move would have been d6d7, reinforcing the center and preparing for a potential pawn break with e5, which could open up lines for White's pieces. The engine's evaluation suggests a loss, indicating that Black can exploit White's weaknesses and gain a material or positional advantage.",
+    "reference_commentary": "An unfortunate misstep. g4 hands the initiative to the opponent and worsens the evaluation considerably. This oversight drastically swings the momentum and leaves the king or pieces dangerously exposed. The engine identifies d6d7 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 2.25,
+      "feedback": "The commentary contains a severe hallucination by referring to 'Black'nor's king' and incorrectly claims d6d7 prepares an e5 break, which is impossible as the e-pawn is not on e4. The evaluation sign is correctly identified as a loss, but the tactical explanation is factually incoherent."
+    }
+  },
+  {
+    "index": 32,
+    "motif": "checkmate",
+    "move_san": "Nc7#",
+    "fen": "r1b1kb1r/p2n1ppp/p3p3/1NppP1B1/3P4/3B1N2/1qP2PPP/3QK2R w Kkq - 0 12",
+    "candidate_commentary": "White's move Nc7#, exploiting the pin on the black queen on d8, which is unable to move without putting itself in check. This move also attacks the vulnerable black king on f7, which has no legal moves to escape checkmate. The position demonstrates a classic example of a forced mate sequence where Black's king is trapped, and White's knight delivers the final blow. The move is strong as it leads directly to checkmate without any immediate counterplay from Black. The tactical motif here is a forced mate due to the pin and lack of escape squares for the black king.",
+    "reference_commentary": "The final strike. Nc7# concludes the struggle by trapping the enemy monarch with no escape. A clean tactical conversion that rewards the preceding positional buildup.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 1,
+      "overall": 1.25,
+      "feedback": "The commentary is factually incorrect, claiming the black queen is on d8 when it is actually on b2, and it fails to identify the actual mating mechanism (the knight covering the escape squares). It is also excessively long and repetitive, violating the conciseness constraint."
+    }
+  },
+  {
+    "index": 33,
+    "motif": "knight_fork",
+    "move_san": "f3",
+    "fen": "r1b2rk1/2p1qppp/p1nb1n2/8/2BPp3/2N1P3/PPQN1PPP/R1B2RK1 w - - 4 12",
+    "candidate_commentary": "White's move f3 is a tactical error as it fails to address the immediate threat posed by the knight on e4, which can fork White's bishop on d6 and knight on f6. This oversight allows Black to gain material advantage without any immediate repercussions for White. The best move would have been d2-e4, challenging Black's knight and preventing the fork, thus maintaining material balance and central control. White's move neglects the importance of central presence and fails to counteract Black's latent threats, leading to a loss in material without a corresponding gain.",
+    "reference_commentary": "By playing f3, the position is exposed to an immediate double attack that wins valuable material. The resulting sequence costs roughly 165 centipawns and gives the opponent a clear path forward. The engine identifies d2e4 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incoherent, claiming a Black knight on e4 can fork White's pieces on d6 and f6, which are occupied by Black's own pieces in the provided FEN. It completely misidentifies the tactical motif and the nature of the threat."
+    }
+  },
+  {
+    "index": 34,
+    "motif": "checkmate",
+    "move_san": "Nf7#",
+    "fen": "6rk/7p/R2N3P/3r4/1P5K/P7/8/8 w - - 5 51",
+    "candidate_commentary": "White's move Nf7#, exploiting the pin on the black king's only remaining escape square, d6, by the rook on d3. This knight move not only delivers an immediate checkmate but also demonstrates a classic tactical motif where a knight, often the least powerful piece in the endgame, becomes a decisive factor due to its unique movement pattern. The absence of forced mating lines beyond the immediate checkmate indicates a well-executed endgame technique, showcasing White's understanding of the positional and tactical nuances to convert a seemingly equal endgame into a win. The move's strength lies in its direct application of pressure on the pinned king",
+    "reference_commentary": "A lethal finish. Nf7# seals the game instantly by forcing checkmate on the board. With all flight squares covered, the opponent has no legal recourse to avert defeat.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 1,
+      "overall": 1.25,
+      "feedback": "The commentary is factually incoherent, claiming the king is on d6 (it is on h8) and that the move is not a checkmate, which directly contradicts the move notation and evaluation. It fails to identify the actual mating mechanism (knight covering escape squares) and is excessively verbose."
+    }
+  },
+  {
+    "index": 35,
+    "motif": "checkmate",
+    "move_san": "Qxg2#",
+    "fen": "b4b1r/3k1ppp/p2p4/1p2p3/3Pq3/N3B3/PP3PPP/R2Q1RK1 b - - 0 16",
+    "candidate_commentary": "Black's move Qxg2#, delivering immediate checkmate, is a strong tactical play exploiting the vulnerable position of White's king. White's king is poorly defended, with no pieces to block or capture the threatening queen. The move Qxg2# is a forced mate, as there are no other moves for Black that could deliver checkmate in the next move. The position demonstrates a classic example of a back rank mate, where White's king is unable to escape due to its own pieces being unable to block or capture the attacking queen. This move showcases Black's understanding of the tactical motif of exploiting weak back rank defenses.",
+    "reference_commentary": "Game over. Qxg2# demonstrates flawless endgame technique, finishing with an inescapable checkmate. The coordinated geometry leaves no squares for the king and ends the battle on the spot.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary is factually incorrect, misidentifying the mate as a back-rank mate when the queen is on g2 (not the back rank) and the king is on g1. It also fails to recognize that this is a forced mate-in-1, not a 'next move' threat, and uses robotic, repetitive phrasing."
+    }
+  },
+  {
+    "index": 36,
+    "motif": "discovered_attack",
+    "move_san": "Kc3",
+    "fen": "8/8/2Q2bk1/2Bp2p1/1P1Pp3/1N2PpP1/R2K1q2/8 w - - 0 50",
+    "candidate_commentary": "White's King move to c3 is a strategic decision aimed at disrupting Black's coordination between the Queen and Rook, setting up a discovered attack on Black's Queen. This move also prepares White's King to potentially enter the game more actively in the future, possibly supporting a pawn push or coordinating with other pieces for a more aggressive stance. The loss of two pawns for the engine suggests a material imbalance that White may be willing to accept in exchange for gaining a dynamic advantage through piece activity and control of key squares. The discovered attack on Black's Queen could lead to tactical opportunities if Black is not careful in their responses.",
+    "reference_commentary": "A calm, master-level decision. Kc3 reinforces key central squares and prepares harmonious long-term development. By coordinating the pieces efficiently, this maneuver neutralizes potential enemy counter-chances.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 1,
+      "overall": 1.25,
+      "feedback": "The commentary is factually incoherent, hallucinating a material deficit and a non-existent discovered attack on the Queen. It fails to recognize the move as a simple, sound positional improvement and is far too verbose."
+    }
+  },
+  {
+    "index": 37,
+    "motif": "middlegame_calculation",
+    "move_san": "Qxf2+",
+    "fen": "4r1k1/p1R2pbp/1q6/3Q1p2/4nB2/P4N1P/5PP1/6K1 b - - 0 24",
+    "candidate_commentary": "Black's move Qxf2+ is a tactical oversight, failing to recognize the latent threat posed by White's queen. The immediate consequence is a double attack on the Black king and bishop, leading to a forced sequence where Black must either lose material or face a checkmate. The best move would have been b6e6, solidifying the Black king'hoff and connecting the rooks, avoiding the tactical pitfall. White's position is superior, exploiting the weaknesses in Black's camp and setting up a potential mating net.",
+    "reference_commentary": "Qxf2+ relinquishes control of the position, allowing the opponent to exploit concrete weaknesses. The resulting sequence costs roughly 160 centipawns and gives the opponent a clear path forward. The engine identifies b6e6 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 3,
+      "conciseness": 4,
+      "overall": 2.75,
+      "feedback": "The commentary contains severe factual errors, claiming a 'double attack on the Black king' (which is impossible as the move is a check) and a 'forced sequence' leading to mate, which contradicts the 1.6 cp loss. It also includes a typo ('king'hoff') and misidentifies the strategic goal of the alternative move."
+    }
+  },
+  {
+    "index": 38,
+    "motif": "none",
+    "move_san": "Qd5+",
+    "fen": "4r1k1/p2R4/2Q3pp/5p2/2P5/1P4q1/P3r1P1/5RK1 w - - 5 31",
+    "candidate_commentary": "Qd5+ by White aims to exploit the pin on the black queen on c6 by attacking it directly. This move is strong as it forces Black to react immediately, potentially leading to a loss of material if Black is not careful. The move also opens up the possibility of doubling rooks on the d-file after Black's response, increasing White'ciu pressure. No immediate tactical motifs are present, but the move sets a solid strategic foundation for further development and potential endgame advantages.",
+    "reference_commentary": "An exemplary move in the middlegame. Qd5+ proactively addresses tactical threats while improving active piece mobility. It maintains harmonious board control and keeps the opponent under continuous pressure.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incoherent, claiming the move exploits a pin on the queen at c6 (which is White's own piece) and contains a severe typo ('White'ciu'). It fails to identify the actual tactical purpose of the check."
+    }
+  },
+  {
+    "index": 39,
+    "motif": "middlegame_calculation",
+    "move_san": "Rcd2",
+    "fen": "6rk/8/2N4p/p2P1pq1/8/7P/PPR2RP1/6K1 w - - 0 33",
+    "candidate_commentary": "White's move Rcd2 is a mistake as it allows Black to play d5d6, exploiting the pin on the c3-knight and opening lines for Black'northern pieces. This move weakens White's pawn structure and opens up the king for potential attacks. A better strategic move would be to reinforce the center or activate the rooks, rather than moving them away from the action. The tactical motif here is Black's pawn break, which disrupts White's pawn chain and opens up the game for Black's pieces.",
+    "reference_commentary": "Rcd2 misjudges the concrete demands of the middlegame, conceding a significant advantage of 157 centipawns. This oversight drastically swings the momentum and leaves the king or pieces dangerously exposed. The engine identifies d5d6 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incoherent, claiming White allows Black to play d5d6 (a White move) and referencing non-existent 'northern pieces.' It fails to identify the actual tactical refutation or the specific positional flaws of Rcd2."
+    }
+  },
+  {
+    "index": 40,
+    "motif": "fork",
+    "move_san": "Qh5",
+    "fen": "r4rk1/1R3ppp/p2Rp1n1/1q6/4Q3/7P/PP2NPP1/6K1 b - - 0 24",
+    "candidate_commentary": "Black's move Qh5 creates a fork, attacking the White Queen on e4, Rook on d6, and the vulnerable Pawn on b2 simultaneously. This is a tactical oversight as it fails to address the immediate threat posed by White's Queen on h5, which could potentially fork Black's Rook and Queen if Black doesn't respond appropriately. The best move would have been b5e5, which would break the pin on the Rook and prevent the fork, maintaining material balance and avoiding a loss. Black's move is flawed as it overlooks the tactical necessity to either defend against the fork or create a counter threat to distract White",
+    "reference_commentary": "Black\u2019s passive retreat to h5 is a significant blunder that overlooks a devastating tactical refutation. By vacating the e5 square, White can immediately play Qxe5, forking the black king and rook to win decisive material. The engine\u2019s recommended move, Qe5, would have maintained pressure and avoided this catastrophic oversight.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incoherent, claiming the move creates a fork when it actually allows one, and hallucinating a White Queen on h5 that does not exist. It fails to identify the actual tactical refutation (Qxe5) and misinterprets the evaluation sign."
+    }
+  },
+  {
+    "index": 41,
+    "motif": "none",
+    "move_san": "Ne2",
+    "fen": "4rrk1/pp1q2bn/2ppn1pp/4pp2/2P4P/1PNPPNP1/PB1Q1PK1/3R1R2 w - - 2 19",
+    "candidate_commentary": "White's move Ne2 aims to reroute the knight towards the center, potentially preparing for a kingside pawn break with f4 or f5 in the future. The move is solid, not committing to any immediate tactical motifs but setting up a flexible structure that could support central control and king safety. The absence of immediate threats or tactical consequences suggests a strategic, positional approach, with White seeking to improve piece coordination and control over key central squares. The move is well-calculated within the context of the position, with no immediate loss of material or positional disadvantages.",
+    "reference_commentary": "Ne2 is top-tier play, combining defensive solidity with purposeful piece activation across the board. It maintains harmonious board control and keeps the opponent under continuous pressure.",
+    "judge_score": {
+      "accuracy": 4,
+      "educational_value": 3,
+      "naturalness": 3,
+      "conciseness": 2,
+      "overall": 3.0,
+      "feedback": "The commentary is factually sound but overly verbose and repetitive, failing to meet the strict 2-4 sentence constraint. It lacks the punchy, direct tone of a grandmaster, relying on generic phrases like 'well-calculated' instead of highlighting specific positional benefits."
+    }
+  },
+  {
+    "index": 42,
+    "motif": "trapped_queen",
+    "move_san": "Rac1",
+    "fen": "3r1r1k/2p1q3/p6p/n2QPp2/1b1P4/2N2N1P/PP4P1/R4RK1 w - - 2 23",
+    "candidate_commentary": "White's move Rac1 (a1c1) is a tactical error as it allows Black to execute a discovered check on the next move, exploiting the trapped queen on d5. The rook on d8 constrains the queen, making it a liability rather than an asset. The best move would have been a2a3, which would have improved the position of White's king and avoided the tactical pitfall. This move fails to address the immediate threats and does not contribute to a strategic advantage, leading to a loss in material and positional pressure.",
+    "reference_commentary": "Rac1 relinquishes control of the position, allowing the opponent to exploit concrete weaknesses. This mistake significantly diminishes the evaluation and surrenders vital central control. The engine identifies a2a3 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 3,
+      "conciseness": 4,
+      "overall": 2.75,
+      "feedback": "The commentary hallucinates a 'discovered check' and incorrectly claims the rook on d8 constrains the queen, which is factually impossible given the board geometry. It fails to identify the actual tactical motif of the trapped queen and misattributes the strategic value of the best move a2a3."
+    }
+  },
+  {
+    "index": 43,
+    "motif": "middlegame_calculation",
+    "move_san": "Nd7",
+    "fen": "rn2r1k1/1b2pp1p/p1p1q1p1/1p2P3/P1p1PP1B/2P5/2Q1B1PP/3RR1K1 b - - 0 17",
+    "candidate_commentary": "Black's move Nd7, intending to reroute the knight to d7, is a strategic misstep as it neglects the immediate threat posed by White'ciuQ on the back rank, which could lead to a devastating skewer or discovered attack after Qc2+. The knight's repositioning also neglects the latent potential of the pawn on c6, which could be advanced to c5, challenging White's d pawn and opening lines for Black's pieces. The move fails to address White's central control and latent threats, leading to a loss in material and positional pressure. A better move would have been c6c5",
+    "reference_commentary": "Nd7 relinquishes control of the position, allowing the opponent to exploit concrete weaknesses. This mistake significantly diminishes the evaluation and surrenders vital central control. The engine identifies c6c5 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 2.25,
+      "feedback": "The commentary contains a severe factual error by claiming the move leads to a 'loss in material,' whereas the evaluation indicates a positional mistake (186 cp) without immediate material loss. Additionally, the reference to a 'devastating skewer' after Qc2+ is tactically unsound and hallucinatory, as the position does not support such a specific tactical refutation."
+    }
+  },
+  {
+    "index": 44,
+    "motif": "checkmate",
+    "move_san": "Qxg7#",
+    "fen": "3r1rk1/5pp1/7p/8/b2Qp1n1/1P6/PB1q1PP1/R5K1 w - - 0 26",
+    "candidate_commentary": "White's move Qxg7#, delivering immediate checkmate, is a brilliant tactical strike exploiting Black's vulnerable position. The move takes advantage of the pin on the f7 pawn by the bishop on b2, which is pinned to the king on e8 and cannot move without losing material. The absence of any forced mating line within the next two moves indicates that White's queen has found a direct and decisive attack without needing to navigate through complex maneuvers. This demonstrates White's superior understanding of tactical motifs and positional dynamics, showcasing a masterful application of pressure leading to a swift and inevitable checkmate.",
+    "reference_commentary": "Checkmate! Qxg7# delivers an immediate and game-ending blow against the helpless king. With all flight squares covered, the opponent has no legal recourse to avert defeat.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary is factually incoherent, claiming the move is a checkmate while simultaneously stating there is no forced mating line, and it hallucinates a pin on f7 that does not exist in the position. It fails to explain the actual tactical mechanism of the mate."
+    }
+  },
+  {
+    "index": 45,
+    "motif": "mistake_other",
+    "move_san": "Nd3",
+    "fen": "r3r1k1/1b2Pq1p/p1p3p1/1pn5/P1p1PPBB/2P4P/2Q3P1/3RR1K1 b - - 0 21",
+    "candidate_commentary": "Black's move Nd3 seems to be an attempt to reroute the knight towards more active squares, possibly aiming to contest the center or prepare for a pawn break. However, this move is inaccurate as it doesn'eed immediately address any tactical threats or strategic goals. The knight's placement doesn't contribute to Black's development or control of the board. The best move would likely be e8e7, centralizing the knight and potentially preparing for a pawn break in the center with moves like d5d4 or even d6d5, depending on White's setup. The move Nd3 doesn't create immediate threats or improve",
+    "reference_commentary": "A sharp and principled choice. Nd3 seizes immediate central space and restricts the opponent's counterplay. By coordinating the pieces efficiently, this maneuver neutralizes potential enemy counter-chances.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 1,
+      "conciseness": 2,
+      "overall": 1.75,
+      "feedback": "The commentary is factually flawed, claiming the move does not address tactical threats when the position is complex, and it contains severe typos ('doesn'eed') and an incomplete final sentence. It fails to sound like a grandmaster, instead offering vague, generic reasoning that contradicts the sharp nature of the position."
+    }
+  },
+  {
+    "index": 46,
+    "motif": "rook_endgame",
+    "move_san": "Kb8",
+    "fen": "2kr3r/p1pnppb1/Bp4pp/4P3/4bB1P/5N2/PPPR1PP1/2K4R b - - 5 14",
+    "candidate_commentary": "Black's move Kb8 is a critical error in this rook endgame scenario. By moving the king towards the center, Black overlooks the immediate threat posed by White's pawn breakthrough with e4 to b7, which would open lines for White'nor rook to invade via the b-file. This oversight allows White to gain a decisive advantage, as the pawn break would not only create a passed pawn but also open the long diagonal for the White rook to join the attack, putting Black in a dire position. The best move for Black would have been to counter-attack immediately with e4b7, challenging White's pawn structure and prevent",
+    "reference_commentary": "A costly inaccuracy. Kb8 compromises piece harmony and invites an immediate tactical counter. The tactical refutation is swift, severely compromising the structural integrity of the position. The engine identifies e4b7 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary is factually incoherent, claiming the best move was 'e4b7' (a pawn move) while describing it as a counter-attack, and incorrectly identifies the position as a rook endgame when bishops and queens are present. It also hallucinates a 'White rook' invasion on the b-file when the move is a pawn capture."
+    }
+  },
+  {
+    "index": 47,
+    "motif": "hanging_piece",
+    "move_san": "Kg7",
+    "fen": "8/p7/5kp1/8/P1R4P/5PK1/7r/8 b - - 24 55",
+    "candidate_commentary": "Black's move f6g7 aims to activate the rook and potentially create a passed pawn, but it's a flawed strategy as it neglects the immediate threat posed by White's rook on h1. The tactical motif here is a hanging piece, as Black's rook on f6 is not defended and could be targeted by White. White's best move Rh1 would exploit this by attacking the rook on f6, forcing Black to respond defensively, which could lead to a loss of material or a compromised position. The engine's evaluation suggests that Black's move is a significant blunder, as the optimal play would be",
+    "reference_commentary": "Kg7 drops material directly, overlooking the immediate vulnerability created on the board. The resulting sequence costs roughly 475 centipawns and gives the opponent a clear path forward. The engine identifies Rh1 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary is factually incoherent, claiming the move activates a rook when it moves the king, and incorrectly identifies the tactical motif. It also fails to recognize that the best move was actually played by Black (h2h1), not White."
+    }
+  },
+  {
+    "index": 48,
+    "motif": "pin",
+    "move_san": "Qd4",
+    "fen": "r2q4/1p3pk1/pp1p1pnp/3P4/2P5/1P3N1P/P2Q1PP1/4R1K1 w - - 3 23",
+    "candidate_commentary": "White's move Qd4 is a strong strategic play, exploiting the pin on the f6 pawn by the queen. This move not only increases pressure on Black's position but also potentially opens lines for a future attack, especially if Black's king remains passive. The pin prevents Black from easily advancing or developing pieces without addressing the threat posed by White's queen. The move is well-calculated, considering the loss of material would be minimal for Black, as indicated by the GOOD engine evaluation. White's queen is well-positioned to control key squares and possibly coordinate with other pieces for tactical opportunities.",
+    "reference_commentary": "Qd4 is an energetic, high-level move that strengthens piece coordination and maintains a firm positional grip. It maintains harmonious board control and keeps the opponent under continuous pressure.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary is factually incorrect; the f6 pawn is not pinned by the queen, and the move is a positional improvement rather than a direct exploitation of a pin. It also violates the conciseness rule by exceeding four sentences and includes robotic meta-commentary about the engine evaluation."
+    }
+  },
+  {
+    "index": 49,
+    "motif": "fork",
+    "move_san": "Qg5",
+    "fen": "3r2k1/1q4p1/p2p2p1/1pp5/6Q1/2P5/PP1r2PP/1R2R2K w - - 0 26",
+    "candidate_commentary": "White's Qg5 is a strong move, exploiting a tactical fork by simultaneously attacking the rook on d2 and the pawn on c5. This creates immediate threats that Black must address, potentially diverting resources from defending against other dangers. The fork also indirectly pressures the rook on d8, as Black's pieces must react to the dual threats. White's move demonstrates a keen understanding of tactical motifs, leveraging the queen's mobility to create multiple threats and force Black into a defensive posture. The move's effectiveness is underscored by the GOOD evaluation from the engine, indicating a significant advantage for White.",
+    "reference_commentary": "White repositions the queen to g5, maintaining a dominant attacking stance while avoiding potential tactical complications. This precise maneuver keeps the pressure on Black's king and prepares for further coordination with the rooks. By holding the evaluation steady at +6.5, White ensures the initiative remains firmly in hand without conceding any ground.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incorrect; the queen on g5 does not attack the rook on d2 or the pawn on c5, nor does it create a fork. It hallucinates tactical threats that do not exist in the position."
+    }
+  },
+  {
+    "index": 50,
+    "motif": "mistake_other",
+    "move_san": "h5",
+    "fen": "1qr2rk1/1b2b1pp/5p2/p2pp3/Np2n2P/1P2PNP1/P2PQPB1/2R1R1K1 w - - 0 22",
+    "candidate_commentary": "White's move h5 is a mistake as it weakens the kingside pawn structure without creating any immediate threats or tactical opportunities. The move allows Black to consolidate their position without any significant response from White. A better move would be g2h3, challenging Black'nor's pawn chain and opening lines for White's pieces to become more active. This would have been a more strategic approach, aiming to create imbalances and potential attacking chances. The INACCURACY engine's loss indicates a missed opportunity for White to gain a more favorable position.",
+    "reference_commentary": "h5 is an energetic, high-level move that strengthens piece coordination and maintains a firm positional grip. The position remains firmly in hand, showcasing accurate positional judgment.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 1,
+      "conciseness": 2,
+      "overall": 1.75,
+      "feedback": "The commentary contains a severe hallucination ('Black'nor's pawn chain') and explicitly references the 'INACCURACY engine's loss,' which violates the rule against meta-prompt leakage. The tone is robotic and the factual basis for the move's weakness is vague and poorly articulated."
+    }
+  },
+  {
+    "index": 51,
+    "motif": "none",
+    "move_san": "cxd5",
+    "fen": "r1bqk2r/pp2npbp/2n1p1p1/2pp4/2P5/2N1P1P1/PP1PNPBP/R1BQ1RK1 w kq - 0 8",
+    "candidate_commentary": "White's cxd5 breaks open the black pawn structure, potentially leading to open files for rooks and creating targets in black'settings. This move is strategically sound as it aims to exploit the weaknesses in black's camp and increase activity. However, it's crucial for White to follow up effectively to convert this into a tangible advantage, as Black can regroup and counterattack if not careful. The move is not immediately tactical but sets a strong strategic foundation for further play.",
+    "reference_commentary": "cxd5 is an energetic, high-level move that strengthens piece coordination and maintains a firm positional grip. By coordinating the pieces efficiently, this maneuver neutralizes potential enemy counter-chances.",
+    "judge_score": {
+      "accuracy": 4,
+      "educational_value": 3,
+      "naturalness": 3,
+      "conciseness": 2,
+      "overall": 3.0,
+      "feedback": "The commentary is factually sound but overly verbose and generic, failing to capture the specific energetic nature of the move highlighted in the reference. It reads more like a textbook explanation than punchy grandmaster commentary, lacking the concise impact required."
+    }
+  },
+  {
+    "index": 52,
+    "motif": "trapped_bishop",
+    "move_san": "Rd8",
+    "fen": "R7/2p2k1p/4R2r/1p1P2pq/2b4B/2P3P1/5PB1/6K1 w - - 6 33",
+    "candidate_commentary": "White's move Rd8 is a tactical error as it allows Black to exploit the trapped bishop on h4. The pawn on g5 and queen on h5 are constraining pieces that limit the bishop's mobility. The best move would have been e6, which would have freed the bishop and potentially led to a more favorable position for White. The immediate consequence of Rd8 is the loss of material as Black can capture the bishop on h4 with their queen or rook, leading to a significant material disadvantage for White. This move fails to address the tactical motif of trapping the bishop and instead exacerbates White's vulnerability.",
+    "reference_commentary": "Rd8 misjudges the concrete demands of the middlegame, conceding a significant advantage of 179 centipawns. The tactical refutation is swift, severely compromising the structural integrity of the position. The engine identifies e6e1 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary is factually incoherent, claiming the move allows Black to exploit a 'trapped bishop on h4' when the bishop is White's and the tactical motif refers to a different dynamic; it also incorrectly identifies the best move as 'e6' instead of the winning promotion e6e1."
+    }
+  },
+  {
+    "index": 53,
+    "motif": "none",
+    "move_san": "Re7",
+    "fen": "1r5k/8/5p1p/3B4/p1P3P1/7P/P4P2/4R1K1 w - - 0 41",
+    "candidate_commentary": "White moves pawn from e1 to e7, aiming to reposition the king closer to the center and potentially prepare for a kingside pawn storm or central breakthrough. The move is strategically sound as it opens lines for the rooks and aligns with the principle of king safety. However, without immediate tactical threats or concrete plans, it's essential to monitor Black'settings to prevent any counterplay. The move is not flawed per se but requires careful follow-up to maximize its potential.",
+    "reference_commentary": "A sharp and principled choice. Re7 seizes immediate central space and restricts the opponent's counterplay. It maintains harmonious board control and keeps the opponent under continuous pressure.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incoherent, incorrectly identifying a rook move as a pawn move and hallucinating a king repositioning. It fails to recognize the actual tactical and positional intent of the rook lift."
+    }
+  },
+  {
+    "index": 54,
+    "motif": "knight_fork",
+    "move_san": "Ne2+",
+    "fen": "3r1rk1/1p2q1pp/5p2/8/1P1n4/6Q1/PPBB1PPP/R4RK1 b - - 0 20",
+    "candidate_commentary": "Black's move Ne2+ is a tactical knight fork that simultaneously attacks the White Queen on g3 and the White King on g1. This move is strong as it puts White in a difficult position, forcing a response that could lead to further tactical opportunities for Black. The fork creates immediate pressure without requiring material gain, showcasing Black's piece coordination and control over key squares. White must respond carefully to avoid losing material or positional disadvantages.",
+    "reference_commentary": "Black\u2019s knight check to e2 is a precise tactical strike that forces the white king to move, disrupting White\u2019s coordination. By delivering check, Black prevents White from consolidating or launching a counterattack, maintaining the initiative in the middlegame. This move is the engine\u2019s top choice, ensuring Black retains the best practical chances despite the material deficit.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 2,
+      "naturalness": 3,
+      "conciseness": 4,
+      "overall": 2.5,
+      "feedback": "The commentary contains a critical factual error: the knight on e2 does not attack the queen on g3 (a knight on e2 attacks d4, f4, c3, c1, d0, f0, etc., but not g3). This misidentification of the tactical motif undermines the entire analysis."
+    }
+  },
+  {
+    "index": 55,
+    "motif": "hanging_piece",
+    "move_san": "Ke6",
+    "fen": "3R4/2B5/8/r2p1kp1/8/7P/5PPK/8 b - - 5 48",
+    "candidate_commentary": "Black's move Ke6 was a tactical error as it allows White to exploit the hanging piece on f7. By playing Ke6, Black weakens their own king's position and opens lines for White's pieces to increase pressure. The best move for Black would have been a5b5, which would have helped to activate the bishop and potentially create counterplay against White's king side. White's move Rb5 is a strong response, aiming to increase pressure on Black's weakened position and potentially target the hanging piece on f7. Black's move Ke6 was a critical mistake that led to a loss in material and strategic disadvantage.",
+    "reference_commentary": "Ke6 represents a severe blunder, abandoning key piece coordination and allowing a free capture. This oversight drastically swings the momentum and leaves the king or pieces dangerously exposed. The engine identifies Rb5 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incoherent, claiming a 'hanging piece on f7' which does not exist in the position and confusing the best move (a5b5) with a White response (Rb5). It fails to identify the actual tactical refutation or the correct strategic intent of the alternative move."
+    }
+  },
+  {
+    "index": 56,
+    "motif": "endgame_calculation",
+    "move_san": "Rxa2",
+    "fen": "r5k1/6p1/2R1Npp1/3p2r1/8/6BP/P4PP1/6K1 b - - 0 39",
+    "candidate_commentary": "Black's move Rxa2 is a blunder as it loseed material without any compensation, allowing White to gain a decisive advantage. The best move would have been g5, attacking the rook and creating threats against White's king. This move would have opened lines for Black's king to become active and potentially create counterplay. Instead, Black's pawn on a8 is left undefended, leading to a significant material imbalance favoring White. The endgame calculation shows that White can exploit this advantage to convert into a winning position.",
+    "reference_commentary": "An unfortunate misstep. Rxa2 hands the initiative to the opponent and worsens the evaluation considerably. This oversight drastically swings the momentum and leaves the king or pieces dangerously exposed. The engine identifies g5h5 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary contains severe factual errors, claiming a pawn exists on a8 (it is a rook) and that the move loses material when it actually captures a pawn. It also misidentifies the tactical purpose of the best move g5, which is a defensive resource rather than a direct attack on the king."
+    }
+  },
+  {
+    "index": 57,
+    "motif": "middlegame_calculation",
+    "move_san": "e6",
+    "fen": "3n2rk/6q1/2N4p/p3Pp2/3P4/5N1P/PPR2RP1/6K1 w - - 2 30",
+    "candidate_commentary": "White's move e6 (intended e5e6) is a tactical error as it weakens the d6 pawn without gaining any concrete advantage or creating immediate threats. This move overlooks the latent danger in Black'nor's position, allowing Black to strengthen their control over the center and potentially launch an attack on White's king side. The best move would have been d4d5, challenging Black's pawn structure and opening lines for White's pieces. This misstep by White demonstrates a lack of central control and overlooks the potential for tactical strikes in the middlegame.",
+    "reference_commentary": "An unfortunate misstep. e6 hands the initiative to the opponent and worsens the evaluation considerably. This mistake significantly diminishes the evaluation and surrenders vital central control. The engine identifies d4d5 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 2.25,
+      "feedback": "The commentary contains a severe factual error by claiming the move weakens a 'd6 pawn' that does not exist in the position (White has a pawn on e5 and d4). Additionally, the phrase 'Black'nor's position' is a nonsensical hallucination that destroys credibility."
+    }
+  },
+  {
+    "index": 58,
+    "motif": "middlegame_calculation",
+    "move_san": "d4",
+    "fen": "r1q1k2r/pp2ppb1/2np1np1/2p2b1p/2P5/1PN1P1PP/P2PNPB1/R1BQ1RK1 w kq - 1 10",
+    "candidate_commentary": "White's move d4 aims to challenge Black'settings central pawn structure and gain space. However, it's a mistake as it overlooks the latent threat posed by Black's bishop on b1, which could potentially become a powerful piece after fianchettoing. The best move would have been g1h2, initiating a kingside attack and creating pressure on Black's position. White's error in d4 weakens their own king's safety and fails to capitalize on the tactical motif of exploiting Black's king's vulnerability.",
+    "reference_commentary": "d4 misjudges the concrete demands of the middlegame, conceding a significant advantage of 212 centipawns. The resulting sequence costs roughly 212 centipawns and gives the opponent a clear path forward. The engine identifies g1h2 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 4,
+      "overall": 2.0,
+      "feedback": "The commentary is factually incoherent, claiming a bishop is on b1 (where the White Queen is) and suggesting a 'fianchetto' for a piece that cannot move there. It also mischaracterizes the defensive move Kh2 as an 'attack' and hallucinates threats that do not exist in the position."
+    }
+  },
+  {
+    "index": 59,
+    "motif": "discovered_attack",
+    "move_san": "Ne2",
+    "fen": "2r2rk1/pp1q2bn/4n1pp/3p1p2/3Pp2P/1PN1P1P1/PB1Q1PKN/2R2R2 w - - 4 25",
+    "candidate_commentary": "White's move Ne2 aims to reposition the knight to a more active square, potentially preparing for a central break with f3-f4, challenging Black's setup. However, this move is somewhat passive as it doesn't immediately address the discovered attack from White's rook on c1, which could potentially target Black's weakened dark squares if Black doesn't respond appropriately. The best move, according to the engine, would be b2a3, which would not only break the pin on the knight but also open lines for potential rook activity, adding more pressure on Black's position. White's move is strategically sound in terms of piece development but tact",
+    "reference_commentary": "A sharp and principled choice. Ne2 seizes immediate central space and restricts the opponent's counterplay. By coordinating the pieces efficiently, this maneuver neutralizes potential enemy counter-chances.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary is factually incoherent, incorrectly identifying a White move as a response to a White-initiated discovered attack, and the text is cut off mid-sentence. It fails to align with the positive evaluation of the move, instead labeling a good move as passive."
+    }
+  },
+  {
+    "index": 60,
+    "motif": "none",
+    "move_san": "Kg2",
+    "fen": "6k1/ppR1R1p1/7p/8/8/6P1/P4P2/3r2K1 w - - 3 35",
+    "candidate_commentary": "White's move Kg2 aims to reposition the king towards the center and potentially prepare for a kingside pawn storm if Black becomes aggressive. However, this move is passive and doesn'nor take advantage of any immediate tactical opportunities. It's a safe but slow move that doesn't contribute to White's development or control of the board. Black should maintain a solid position and look for opportunities to increase pressure or create weaknesses in White's camp. Without concrete threats or tactical motifs, this move is considered passive rather than aggressive or strategically sound.",
+    "reference_commentary": "An exemplary move in the endgame. Kg2 proactively addresses tactical threats while improving active piece mobility. The position remains firmly in hand, showcasing accurate positional judgment.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incorrect and contradicts the ground truth by labeling a good move as passive and strategically unsound. It fails to recognize the positional improvement of the king and incorrectly suggests the move lacks merit."
+    }
+  },
+  {
+    "index": 61,
+    "motif": "trapped_knight",
+    "move_san": "Nh6",
+    "fen": "1r3rk1/p1q1ppbp/2p3p1/3p1n2/3P2P1/P1P2N1P/1P2QP2/R1B1R1K1 b - - 0 15",
+    "candidate_commentary": "Black's move Nh6 is a critical error as it inadvertently allows White to exploit the pin on the knight by the Bishop on c1. The best move would have been f5d6, which would have reinforced the knight and potentially opened lines for other pieces to become more active. By moving the knight to h6, Black loses the pinning pressure and allows White to maintain control over the center and potentially launch an attack on Black's king side. This oversight significantly weakens Black's position and increases White's chances of gaining material advantage.",
+    "reference_commentary": "Nh6 relinquishes control of the position, allowing the opponent to exploit concrete weaknesses. The tactical refutation is swift, severely compromising the structural integrity of the position. The engine identifies f5d6 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 3,
+      "overall": 1.75,
+      "feedback": "The commentary is factually incorrect; there is no pin on the knight by the Bishop on c1, and the move Nh6 does not 'relinquish' a pin. It fails to identify the actual tactical motif (trapped knight) or the specific strategic error of abandoning central control."
+    }
+  },
+  {
+    "index": 62,
+    "motif": "mistake_other",
+    "move_san": "O-O",
+    "fen": "r3k2r/p1pbqppp/1p1p1n2/n2Pp3/2P1P3/2P2N2/P1Q1BPPP/1RB1K2R w Kkq - 0 11",
+    "candidate_commentary": "White's move O-O (e1g1) is a standard castling move aimed at safeguarding the king and connecting the rooks. However, in this position, it's premature as it exposes the king to potential threats from Black'nor behind and the open e-file. The move also neglects the latent tactical motif of exploiting the pin on the d-file after Black plays ...exd3. The INACCURACY engine suggests that a better move would be c4, aiming to challenge Black's central pawn structure and potentially open lines for White's pieces. The move O-O is flawed in this context as it doesn't",
+    "reference_commentary": "A sharp and principled choice. O-O seizes immediate central space and restricts the opponent's counterplay. This principled advance cements a durable advantage heading into the next phase of the game.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 1,
+      "conciseness": 2,
+      "overall": 1.25,
+      "feedback": "The commentary is factually incoherent, referencing non-existent pins and threats, and ends with a broken sentence fragment. It fails to correctly identify the strategic reason for the inaccuracy (missing the c5 advance) and contains severe hallucinations."
+    }
+  },
+  {
+    "index": 63,
+    "motif": "missed_sacrifice",
+    "move_san": "Qxd5",
+    "fen": "8/8/2Q2bk1/2Bp2p1/1P1Pp3/1NK1PpP1/q7/8 w - - 0 51",
+    "candidate_commentary": "White's move Qxd5 underestimates Black's latent counterplay, allowing Black to respond with c6d5, exploiting the pin on the bishop and gaining material advantage. The tactical motif here is a missed sacrifice, as White could have offered a pawn to disrupt Black's coordination and open lines for penetration. However, by not creating immediate threats or sacrifices, White's position weakens, leading to a loss as indicated by the engine evaluation dropping significantly. The best move Be7 would have neutralized the pin and improved Black's piece activity without compromising material. White's oversight in not addressing Black's threats and",
+    "reference_commentary": "Qxd5 fails to find the decisive sacrifice, missing an opportunity to break through the defenses. This mistake significantly diminishes the evaluation and surrenders vital central control. The engine identifies Be7 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 1,
+      "conciseness": 2,
+      "overall": 1.25,
+      "feedback": "The commentary is factually incoherent, claiming the move allows Black to play the same square (c6d5) and confusing the sides (stating Be7 improves Black's activity when it is White's best move). It also cuts off mid-sentence, failing to provide a complete or logical explanation."
+    }
+  },
+  {
+    "index": 64,
+    "motif": "middlegame_calculation",
+    "move_san": "Re4",
+    "fen": "r7/1p1q1pk1/p2p1p1p/3Pn2P/2PQ4/5N2/P4PP1/4R1K1 w - - 1 27",
+    "candidate_commentary": "White's move Re4 is a strategic attempt to control the center and open lines for the queen and bishop. However, it's a mistake as it overextends the rook too early without concrete support, making it vulnerable to counterplay. The best move would likely be f3h4, challenging Black'nor's pawn structure and opening lines for White's pieces. This move would have been more tactically sound, creating potential threats and improving piece coordination. White's misstep allows Black to consolidate and counterattack effectively.",
+    "reference_commentary": "A costly inaccuracy. Re4 compromises piece harmony and invites an immediate tactical counter. This oversight drastically swings the momentum and leaves the king or pieces dangerously exposed. The engine identifies f3h4 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 2,
+      "educational_value": 2,
+      "naturalness": 3,
+      "conciseness": 4,
+      "overall": 2.75,
+      "feedback": "The commentary contains a severe factual error by referring to a 'bishop' and 'Black'nor's pawn structure' (likely a typo for 'Black's'), neither of which are relevant or correctly identified in the position. It fails to explain the specific tactical refutation or why the rook move is inferior to the knight maneuver, relying on vague strategic fluff instead of concrete calculation."
+    }
+  },
+  {
+    "index": 65,
+    "motif": "checkmate",
+    "move_san": "Qh3#",
+    "fen": "r6r/2pk1ppp/p1np4/1pbBpN1q/4P1b1/5NK1/PPPP1PR1/R1BQ4 b - - 13 18",
+    "candidate_commentary": "Black's move Qh3# is a brilliant tactical strike, exploiting the pin on the pinned piece (the bishop on b4). The move delivers immediate checkmate, as the black queen cannot be captured without allowing the white king to escape, and there are no other black pieces that can deliver mate on the next move. The position shows a clear lack of defense from White, making Qh3# a decisive and strong move in this endgame scenario. The absence of forced mating lines beyond Qh3# indicates that Black's strategy was well-executed, leading to a swift and inevitable checkmate.",
+    "reference_commentary": "The final strike. Qh3# concludes the struggle by trapping the enemy monarch with no escape. With all flight squares covered, the opponent has no legal recourse to avert defeat.",
+    "judge_score": {
+      "accuracy": 1,
+      "educational_value": 1,
+      "naturalness": 2,
+      "conciseness": 2,
+      "overall": 1.5,
+      "feedback": "The commentary is factually incoherent, claiming the queen cannot be captured without allowing the white king to escape (which is nonsensical in a checkmate context) and misidentifying the position as an endgame. It fails to explain the actual mating net or the role of the supporting pieces."
+    }
+  },
+  {
+    "index": 66,
+    "motif": "pin",
+    "move_san": "Qxg5",
+    "fen": "6k1/pp4p1/2p4p/6q1/5Q2/1P3RKP/P2r4/8 w - - 10 37",
+    "candidate_commentary": "White's Qxg5 move is a strong tactical decision aimed at exploiting the pin on the g7 pawn. By attacking the pawn, White forces Black to deal with the threat immediately, as the pinned pawn cannot move without putting the King in check. This move also indirectly threatens the Black King, as Black's only defensive option is to either block the pin with a pawn move or allow the Queen to capture the pawn, which could lead to further complications. The pin creates a dual threat that could lead to material loss for Black if not properly addressed, making Qxg5 a potent tactical maneuver in this position. However, the INACCUR",
+    "reference_commentary": "Qxg5 is an energetic, high-level move that strengthens piece coordination and maintains a firm positional grip. It maintains harmonious board control and keeps the opponent under continuous pressure.",
+    "judge_score": {
+      "accuracy": 3,
+      "educational_value": 3,
+      "naturalness": 3,
+      "conciseness": 3,
+      "overall": 3.0,
+      "feedback": "Parsing failed, defaulted to neutral score."
+    }
+  },
+  {
+    "index": 67,
+    "motif": "rook_endgame",
+    "move_san": "Rd7+",
+    "fen": "r2k1r2/2p3R1/1p6/p1pPpB2/2b1P3/2P5/P5PP/4R2K w - - 1 33",
+    "candidate_commentary": "White's move Rd7+ is a mistake because it allows Black to easily blockade the White rook with ...d7-d7, which would result in a passive rook unable to influence the game. The best move would have been e1a1, which would activate White'nor king and rook, aiming to create threats against Black's king and pawns. This move would have improved White's position by bringing pieces into play and creating potential for tactical sequences in the endgame. Instead, White's move loses material and fails to create any immediate threats or improve their position.",
+    "reference_commentary": "Rd7+ relinquishes control of the position, allowing the opponent to exploit concrete weaknesses. This mistake significantly diminishes the evaluation and surrenders vital central control. The engine identifies e1a1 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 68,
+    "motif": "mistake_other",
+    "move_san": "d4",
+    "fen": "r3kb1r/ppqn1ppp/2pp1nb1/4p3/2P3P1/2N1PN1P/PP1P1PB1/R1BQ1RK1 w kq - 3 10",
+    "candidate_commentary": "White's d4 move opens lines for the bishop and queen but neglects development and king safety. The move is tactically flawed as it weakens control over the center without adechnical preparation, allowing Black to gain tempo with moves like f3, which would have improved White's piece coordination and central control. The INACCURACY engine suggests that f3 followed by e1 would have been a stronger plan, aiming to complete development while maintaining central presence. White's move d4 could lead to a loss of material if Black capitalizes on the lack of development and central pressure.",
+    "reference_commentary": "d4 is top-tier play, combining defensive solidity with purposeful piece activation across the board. This principled advance cements a durable advantage heading into the next phase of the game.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 69,
+    "motif": "middlegame_calculation",
+    "move_san": "Nf6",
+    "fen": "3rr1k1/pb2q3/1p2p2p/3nQ1p1/1P6/1B5P/P2B1PP1/1R2R1K1 b - - 0 26",
+    "candidate_commentary": "Black's move Nf6, intending to be d5f6, is a mistake as it doesn'eed address the immediate threats and doesn't develop a piece or prepare for castling. The best move would be e7g7, which would activate the dark-squared bishop and align the rook with the potentially weakened f-file. This move would have improved Black's position and increased their piece activity, contrasting sharply with the passive nature of Nf6. The tactical motif here is the missed opportunity to exploit the open f-file and coordinate pieces for a stronger central presence.",
+    "reference_commentary": "A costly inaccuracy. Nf6 compromises piece harmony and invites an immediate tactical counter. This mistake significantly diminishes the evaluation and surrenders vital central control. The engine identifies e7g7 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 70,
+    "motif": "checkmate",
+    "move_san": "Qh5#",
+    "fen": "3N3k/pQ5p/4p1p1/3q4/8/2b1P1PK/P3RP1P/4n3 b - - 2 28",
+    "candidate_commentary": "Black's move Qh5# is a brilliant tactical strike, exploiting the weaknesses in White's position. White's pieces are poorly coordinated, with the bishop on d3 not defending against threats and the pawn structure on the kingside being vulnerable. The move Qh5# delivers immediate checkmate, as it puts the Black king in check with no legal moves to escape, while also threatening to fork the White king and queen with another piece, if not properly defended. The absence of forced mating lines beyond Qh5# indicates that White's position is hopelessly compromised, with no resources left to counter the immediate checkmate threat. This demonstr",
+    "reference_commentary": "Checkmate! Qh5# delivers an immediate and game-ending blow against the helpless king. The coordinated geometry leaves no squares for the king and ends the battle on the spot.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 71,
+    "motif": "hanging_piece",
+    "move_san": "Rxf8",
+    "fen": "2kr1r2/pp4pp/2pp2nb/8/2PPP1bP/PPN3P1/1BK3B1/3R1R2 w - - 5 25",
+    "candidate_commentary": "White's move Rxf8 is a classic example of a tactical motif known as a hanging piece, where White sacrifices a rook to gain a decisive material advantage or positional pressure. However, this move is flawed as it overlooks the immediate threat posed by Black's bishop on g7, which can deliver a devastating check on f7, leading to potential checkmate threats. The best move for White, according to the engine analysis, would be Rde1, which would not only avoid the immediate tactical peril but also align White's rook with the enemy king, setting up for potential tactical opportunities in the future. By playing Rxf8, White",
+    "reference_commentary": "Rxf8 drops material directly, overlooking the immediate vulnerability created on the board. This mistake significantly diminishes the evaluation and surrenders vital central control. The engine identifies Rde1 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 72,
+    "motif": "missed_sacrifice",
+    "move_san": "Qxf4",
+    "fen": "r3r1k1/1b2Pq1p/p1p3p1/1p6/P3PPBB/2PQ3P/6P1/4R1K1 b - - 0 23",
+    "candidate_commentary": "Black's move Qxf4 is a tactical oversight, failing to recognize the latent threat of a discovered attack after White plays Rxe7. The move Qxf4 prematurely captures a pawn without addressing the more pressing issue of White's latent threat to double after Rxe7, which would expose Black's king to potential checkmate threats. The best move for Black would have been e8e7, which would have neutralized the discovered attack and maintained material balance while also keeping Black's king safe. The missed sacrifice by Black overlooks the tactical motif of a discovered attack, which could have led to a favorable position or even a win if properly executed.",
+    "reference_commentary": "Qxf4 wins a pawn but completely abandons the decisive ...e8\u2011e7 idea that forces White\u2019s rook onto e7 and creates a winning rook sacrifice. After the correct ...e7, White plays Rxe7 and Black\u2019s only try f5 still leaves him down material and with no compensation. The 261\u2011centipawn loss shows the queen capture forfeits the missed sacrifice and turns a winning line into a losing one.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 73,
+    "motif": "knight_fork",
+    "move_san": "Nf5+",
+    "fen": "8/5p2/p2Rpkpn/N7/P4P2/4P1K1/r4P1P/8 b - - 2 36",
+    "candidate_commentary": "Black's move Nf5+ is a strong tactical play, exploiting the knight fork by attacking the Rook on d6 and the pawn on e3 simultaneously. This creates immediate threats that White must address, potentially diverting resources from other critical areas on the board. The fork also indirectly puts pressure on White's King, which is slightly misplaced on g3, as it could be forced to move away from safety if Black continues to create threats. The move demonstrates Black's understanding of the tactical motif and the ability to leverage it for positional gain. White's position is compromised, and they must respond carefully to avoid material loss or checkmate.",
+    "reference_commentary": "Black\u2019s knight leap to f5 is the optimal move, delivering a check that forces the White king to react while simultaneously threatening a devastating fork. This energetic maneuver maximizes the knight\u2019s activity in the endgame, seizing the initiative to disrupt White\u2019s coordination. By keeping the evaluation perfectly balanced, Black maintains the pressure and dictates the flow of the game.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 74,
+    "motif": "pin",
+    "move_san": "Qxg5",
+    "fen": "r6r/kp1bP2p/p2P4/3NRpPq/8/8/PP4PP/R5K1 b - - 0 24",
+    "candidate_commentary": "Black's move Qxg5 is an aggressive attempt to exploit the pin on the pawn on g2 by attacking it directly with the queen. This move is strategically sound as it aims to create potential threats against White's king, which is currently not well defended due to its position on g1. However, the effectiveness of this tactic heavily relies on White's response. If White can effectively defend the pawn or counterattack, Black's initiative may not lead to a tangible advantage. The pin also opens up the possibility for Black to double on g2 if White's king moves away, but this requires careful follow-up planning. The GOOD",
+    "reference_commentary": "A sharp and principled choice. Qxg5 seizes immediate central space and restricts the opponent's counterplay. This principled advance cements a durable advantage heading into the next phase of the game.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 75,
+    "motif": "none",
+    "move_san": "e4",
+    "fen": "1r3rk1/pppbnppp/8/q7/3P4/P1P3P1/4PPBP/R1BQ1RK1 w - - 1 15",
+    "candidate_commentary": "White's pawn move e4 aims to gain space in the center, adhering to opening principles and setting up for a potential minor piece development and king safety via castling. The move is strong as it opens lines for the bishop and queen while also challenging Black'ciuvers control in the center. No immediate tactical motifs are present, but the strategic positioning could lead to better control of the board in the middle game. White's pawn structure remains solid, and there are no immediate threats or weaknesses to White's position.",
+    "reference_commentary": "e4 is an energetic, high-level move that strengthens piece coordination and maintains a firm positional grip. It maintains harmonious board control and keeps the opponent under continuous pressure.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 76,
+    "motif": "rook_endgame",
+    "move_san": "Rxf2",
+    "fen": "2R5/4rpkp/1p3np1/3p4/1P1Np3/2PnP2P/r4PP1/1R4K1 b - - 0 32",
+    "candidate_commentary": "Black's move Rxf2 is a critical error in this rook endgame scenario. By capturing on f2, Black prematurely exposes their king without gaining any material advantage or creating immediate threats. The best move would have been e7a7, which would have activated the king and started to create a passed pawn, a crucial element in rook endgames. This move would have put pressure on White'settings and improved Black's position, rather than weakening it by leaving the king too exposed. Black's mistake here is a classic example of failing to coordinate between the king and rook effectively in an endgame.",
+    "reference_commentary": "An unfortunate misstep. Rxf2 hands the initiative to the opponent and worsens the evaluation considerably. The tactical refutation is swift, severely compromising the structural integrity of the position. The engine identifies e7a7 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 77,
+    "motif": "skewer",
+    "move_san": "Rb1",
+    "fen": "5rk1/5ppp/4b3/1p1pPpPP/2pP4/b1P5/rqNQKP2/2RRN3 w - - 6 24",
+    "candidate_commentary": "White's rook move to b1 aims to exploit the skewer tactic, targeting the back pawn on b5. By aligning the rook with the queen on b2, White creates a potential two-way attack: if Black's pawn moves, it will be captured by the rook, and if Black's king moves away, it will expose the queen to a discovered attack. This move is strong as it increases pressure on Black's position without immediate risk to White's own pieces. The skewer could lead to material loss for Black if not properly defended. The calculation here is about creating dual threats to maximize pressure and force a defensive response from Black.",
+    "reference_commentary": "Rb1 is an energetic, high-level move that strengthens piece coordination and maintains a firm positional grip. This principled advance cements a durable advantage heading into the next phase of the game.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 78,
+    "motif": "trapped_knight",
+    "move_san": "dxc3",
+    "fen": "rnb2rk1/ppp3np/3p4/5pQP/3p2P1/2NBPP2/PPP5/R3K2R b KQ - 0 15",
+    "candidate_commentary": "Black's move dxc3 is a significant tactical error as it prematurely exposes the knight on g7 without any immediate gain or threat. The move allows White to potentially exploit the pinning of the knight by the queen on g5, which could lead to further weaknesses in Black's position. The best strategic move would have been to reinforce the knight on g7 or develop pieces to control the center and prepare for potential counterplay, rather than creating a vulnerable piece that could be easily trapped. The loss of material without concrete compensation is a clear indication of a flawed decision.",
+    "reference_commentary": "dxc3 relinquishes control of the position, allowing the opponent to exploit concrete weaknesses. This mistake significantly diminishes the evaluation and surrenders vital central control. The engine identifies g8h8 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 79,
+    "motif": "overloaded_piece",
+    "move_san": "Nxe5",
+    "fen": "r2qkb1r/1p1bnppp/p1p1pn2/4p3/2PP4/2N2NPP/PP3PB1/R1BQ1RK1 w kq - 0 12",
+    "candidate_commentary": "White's move Nxe5 (f3xe5) is a tactical oversight as it prematurely sacrifices the knight without gaining material or positional advantage immediately. The engine's best move d4xe5 would have been stronger, opening lines for the bishop on c1 and creating potential for a pawn break in the center, which could lead to more dynamic play. The knight's capture on e5 doesn't address White's lack of development or control over the board, leading to a loss in material without a clear tactical or strategic gain. The tactical motif of an overloaded piece is not applicable here as no piece is forced to defend multiple threats. White",
+    "reference_commentary": "By committing Nxe5, the defensive burden collapses as the opponent exploits the overloaded defenders. The tactical refutation is swift, severely compromising the structural integrity of the position. The engine identifies dxe5 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 80,
+    "motif": "none",
+    "move_san": "Kg6",
+    "fen": "8/8/8/5P1K/7P/4k3/1p6/1B5b w - - 0 56",
+    "candidate_commentary": "White's move Kg6 (h5g6) aims to activate the king and potentially create a passed pawn after exchanging on the kingside. However, this move is strategically flawed as it allows Black to strengthen their own pawn structure without immediate threats. The move doesn'nor take advantage of the passed pawn on h5, nor does it create immediate tactical opportunities. Black can simply continue to improve their position, possibly pushing their own pawns towards promotion while keeping the king safe. White's king should instead focus on central control and pawn breaks to create counterplay. Without concrete tactical motifs, this move is passive and doesn't contribute to",
+    "reference_commentary": "Kg6 is an energetic, high-level move that strengthens piece coordination and maintains a firm positional grip. It maintains harmonious board control and keeps the opponent under continuous pressure.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 81,
+    "motif": "middlegame_calculation",
+    "move_san": "Rf8",
+    "fen": "3rr1k1/pb2q3/1p2pn1p/4Q1p1/1P6/1BB4P/P4PP1/1R2R1K1 b - - 2 27",
+    "candidate_commentary": "Black's move Rf8 is a critical error, allowing White to exploit the latent weaknesses in Black'settings. By moving the rook to f8, Black overlooks the latent threat posed by White's queen side pieces, particularly the queen on e8, which can coordinate with the bishop on b4 to launch a devastating attack on Black's king side. The best move would have been g7f8, which would have at least temporarily defended against White's threats and maintained material balance. This misstep significantly weakens Black's king side, setting the stage for White to gain a decisive advantage. The tactical motif here involves a latent",
+    "reference_commentary": "An unfortunate misstep. Rf8 hands the initiative to the opponent and worsens the evaluation considerably. This mistake significantly diminishes the evaluation and surrenders vital central control. The engine identifies g8f7 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 82,
+    "motif": "knight_fork",
+    "move_san": "Ng7",
+    "fen": "rnbq1rk1/ppp1pp1p/3p2pQ/7n/3P3P/2N2P2/PPP1P1P1/R3KBNR b KQ - 0 8",
+    "candidate_commentary": "Black's move Ng7 (h5g7) is a tactical mistake because it allows White to execute a knight fork on g3, targeting the Rook on h1, Bishop on f1, and the pawn on e2. This fork creates immediate threats that Black must address, potentially leading to material loss or positional weaknesses. The best move would have been h5g3, which would not only avoid the fork but also maintain pressure on White's position and possibly lead to better tactical or strategic advantages. The knight fork is a powerful tactical motif that can often result in material gain or a significant positional improvement if not properly countered. Black's failure to",
+    "reference_commentary": "A sharp miscalculation. Ng7 walks right into a tactical fork that forces decisive material concessions. The tactical refutation is swift, severely compromising the structural integrity of the position. The engine identifies h5g3 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 83,
+    "motif": "discovered_attack",
+    "move_san": "Ke2",
+    "fen": "2kr1bR1/pp3p2/8/2PPp3/6p1/1P2B1P1/P4P2/R2Q1K1q w - - 7 26",
+    "candidate_commentary": "White's Ke2 move is a strategic attempt to reposition the King towards the center, potentially preparing for a kingside pawn break with f3-f4, aiming to challenge Black's pawn structure on the kingside. However, this move is flawed as it overlooks the discovered attack on Black's Queen on d1 by White's Bishop on f1, which could lead to a tactical opportunity if Black is not careful. The immediate concern for White is to address this discovered attack, possibly by repositioning the Bishop or finding a way to activate the King without falling victim to potential tactics involving Black's Queen. The move Ke2 does not directly contribute to",
+    "reference_commentary": "Ke2 is an energetic, high-level move that strengthens piece coordination and maintains a firm positional grip. The position remains firmly in hand, showcasing accurate positional judgment.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 84,
+    "motif": "pin",
+    "move_san": "Qd5",
+    "fen": "r4r1k/2p1q3/p6p/n3Pp2/1b1PQ3/2N2N1P/PP4P1/R4RK1 w - f6 0 22",
+    "candidate_commentary": "White's Qd5 move aims to exploit the pin on the h6 pawn by attacking it directly, which could lead to a potential double attack on the h7 pawn if Black is not careful. The pin also puts pressure on Black's position, as the h6 pawn is now a target and may need to be defended or sacrificed. However, this move also exposes White's queen to potential counterplay, especially if Black can break the pin with moves like ...f5 or ...h5, opening lines for Black's pieces. The move is aggressive but risky, as it opens up White's own king to potential threats if Black successfully counterattacks.",
+    "reference_commentary": "Qd5 misjudges the concrete demands of the middlegame, conceding a significant advantage of 826 centipawns. The resulting sequence costs roughly 826 centipawns and gives the opponent a clear path forward. The engine identifies e4h4 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 85,
+    "motif": "zwischenzug",
+    "move_san": "Ne6",
+    "fen": "2rqr1k1/1b3pbp/pp1p2p1/n3p3/P2P1nP1/2P2N1P/BPQN1P1B/R3R1K1 b - - 4 18",
+    "candidate_commentary": "Black's move Ne6 aims to reposition the knight to a more active square, potentially preparing for a kingside attack or defense. However, this move is flawed as it overlooks the latent tactical motif of a zwischenzug, which could be exploited by White. The best move for White, Nxh3+, would force Black's king to move, losing time and potentially leading to a more favorable position for White. Black's failure to anticipate this sequence and respond appropriately to White's threats demonstrates a lack of strategic depth and tactical awareness in this position.",
+    "reference_commentary": "Ne6 looks like a natural centralization, but it completely overlooks White\u2019s forcing zwischenzug\u202fNxh3+, which checks the king and wins material. By playing the quiet knight retreat, Black allows White to seize the initiative and swing the evaluation from a clear +2.09 to a decisive \u20131.35. The missed check not only preserves the attack on g1 but also exploits the loose pawn on h3, turning the position in White\u2019s favor.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 86,
+    "motif": "missed_sacrifice",
+    "move_san": "Qb6",
+    "fen": "4r1k1/p1R2pbp/8/q2p1p2/4nB2/P2Q1N1P/5PP1/6K1 b - - 0 23",
+    "candidate_commentary": "Black's move Qb6 overlooks the potential tactical motif of a sacrifice to disrupt White's coordination and open lines for penetration. The best move, however, would be g7h6, which would open up the h-file for Black's rook to penetrate and create potential threats against White's king. By playing Qb6, Black misses the chance to destabilize White's position and instead allows White to maintain a solid structure with moves like Be5, keeping the game balanced without immediate tactical consequences. The move Qb6 is flawed in this position as it fails to exploit the tactical opportunity for a sacrifice that could have led",
+    "reference_commentary": "Qb6 abandons the defence of the g7\u2011pawn and lets White unleash the tactical shot\u202fBh6, a direct sacrifice that opens lines to Black\u2019s king and forces \u2026Be5 to survive. By moving the queen instead of playing the prophylactic \u2026h6, Black misses the only way to stop the bishop\u2019s entry and drops from a slight edge to a clear disadvantage. The missed sacrifice turns a modest plus into a \u221286\u2011cp evaluation.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 87,
+    "motif": "none",
+    "move_san": "Kg7",
+    "fen": "5rk1/p7/1p2Q2p/6p1/1P3q2/7P/P5P1/4R2K b - - 0 39",
+    "candidate_commentary": "Black moves their king to g8, preparing to castle queenside and connect their rooks, which is a standard strategic move in this position. It's a solid move that doesn'nor pose immediate threats but improves king safety and rook activity. White's loss is not immediately apparent, but Black should remain vigilant for potential tactical opportunities that may arise as the game progresses. The move is generally considered strong from a strategic perspective.",
+    "reference_commentary": "An exemplary move in the middlegame. Kg7 proactively addresses tactical threats while improving active piece mobility. The position remains firmly in hand, showcasing accurate positional judgment.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 5,
+      "overall": 4.75,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 88,
+    "motif": "fork",
+    "move_san": "Rxg3+",
+    "fen": "4k3/1R6/6N1/5p1p/7P/2r3PK/5b2/8 b - - 0 47",
+    "candidate_commentary": "Black's move Rxg3+ is a strong tactical play, exploiting a fork by attacking both the Knight on g6 and the King on h3 simultaneously. This forces White to respond, likely leading to a loss of material or a weakening of their position. The fork is a potent tactic in this position as it puts pressure on multiple critical points without requiring any material sacrifice. White must now address this dual threat, which could lead to a disadvantageous turn of events. The move demonstrates Black's understanding of the tactical potential in the current board state and their ability to leverage it effectively.",
+    "reference_commentary": "Black executes a precise rook lift to g3, delivering check while simultaneously forking the White king and the undefended knight on g6. This tactical blow forces the king to move, allowing Black to capture the knight and secure a decisive material advantage. The move is the engine\u2019s top choice, perfectly leveraging the exposed position of White\u2019s pieces to convert the initiative into a winning endgame.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 89,
+    "motif": "checkmate",
+    "move_san": "Rd2#",
+    "fen": "8/8/8/P6p/8/2Rnk3/r7/3KN3 b - - 2 60",
+    "candidate_commentary": "Black's move Rd2#, delivering checkmate, is a brilliant tactical play exploiting the pinning of the black rook on a2 by White's knight on f3. The pin prevents the black rook from moving to a safe square, leaving it with no legal moves to escape the checkmate. This move demonstrates Black's understanding of tactical motifs, specifically the use of pins and skewers to deliver checkmate. White's loss of material without a corresponding gain in position or material is a clear indication of a poor strategic execution, as evidenced by the GOOD engine's loss calculation. The immediate checkmate without forced mating lines further highlights Black'",
+    "reference_commentary": "Game over. Rd2# demonstrates flawless endgame technique, finishing with an inescapable checkmate. Every defensive interposition is eliminated, securing an immediate full point.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 97,
+    "motif": "trapped_rook",
+    "move_san": "d4",
+    "fen": "q4rk1/p1r1ppbp/1p1p2p1/2p5/2P5/1PN1PnPP/PBQP1PNn/3R1R1K w - - 1 18",
+    "candidate_commentary": "White's move d4 was a strategic error as it failed to address the immediate tactical threat posed by the trapped rook on f1, which could be disrupted by a timely pawn break or piece activation. The knight on h2 further constrains the rook, limiting its mobility and potential impact on the game. The best move c3d5 would have improved central control and potentially opened lines for other pieces to become more active, avoiding the pitfalls of White's passive approach. This oversight led to a loss in material and positional disadvantage, as indicated by the engine's evaluation drop.",
+    "reference_commentary": "A costly inaccuracy. d4 compromises piece harmony and invites an immediate tactical counter. The resulting sequence costs roughly 197 centipawns and gives the opponent a clear path forward. The engine identifies c3d5 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 113,
+    "motif": "pawn_fork",
+    "move_san": "e4",
+    "fen": "r3k2r/1p3ppp/p7/3npbB1/1n6/2N5/PP2PPPP/R2K1B1R w kq - 0 13",
+    "candidate_commentary": "White's pawn move e4 opens lines for the bishop on f3 and queen on d3, aiming to control the center and potentially create a pawn fork on the knight on d5 and bishop on f5 after f3 develops. This move is strong as it aligns with opening principles of controlling the center and developing minor pieces, while also setting up potential tactical threats. The pawn fork could lead to doubled threats against the black king if Black is not careful, especially if Black's pieces are not optimally placed to respond to the threats. White's move is a proactive approach to gain a slight but significant advantage in development and space.",
+    "reference_commentary": "White strikes at the center with e4, immediately challenging Black\u2019s active d5 pawn and opening lines for the bishops. This energetic pawn thrust creates a double attack on the d5 and f5 squares, forcing Black to react to the threat of material loss. By seizing central space, White enhances piece coordination and prepares to exploit the open files in the coming endgame.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 116,
+    "motif": "skewer",
+    "move_san": "Rxe7+",
+    "fen": "8/pp1krRpp/3p2nb/1NpP4/2P4P/PP4P1/1BK5/8 w - - 2 32",
+    "candidate_commentary": "White's rook move to e7+ creates a skewer tactic, aiming to sacrifice the pawn on b7 after Black's king moves away from the rook's line of attack. This move is strong as it puts pressure on Black's position, forcing the king to move and potentially leading to a double attack on the pawns if Black is not careful. The skewer could lead to a significant material advantage for White if Black fails to address the threat immediately. The engine's loss of 24 centipawns indicates that this sequence could lead to a favorable outcome for White if executed correctly.",
+    "reference_commentary": "Rxe7+ is top-tier play, combining defensive solidity with purposeful piece activation across the board. By coordinating the pieces efficiently, this maneuver neutralizes potential enemy counter-chances.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 125,
+    "motif": "overloaded_piece",
+    "move_san": "Qh4",
+    "fen": "3r1rk1/1pq1n1b1/p3p1p1/2p2p1P/2PnN1Q1/1P6/PB1P1PB1/3R1R1K w - - 0 21",
+    "candidate_commentary": "White's move Qh4 overlooks the potential tactical motif of overloading the opponent's piece, specifically the bishop on b1. By moving the queen to h4, White risks losing material if Black responds with Qxg3, which would fork the king and rook after Black plays Qxg4. The best move, Qg3, avoids this immediate threat and keeps pressure on Black's position without committing to a loss. White's original plan was flawed as it exposed the king to a double attack, which is a critical error in chess strategy. The move Qg3 would have been a stronger choice, maintaining pressure while avoiding tactical vulnerabilities",
+    "reference_commentary": "By committing Qh4, the defensive burden collapses as the opponent exploits the overloaded defenders. This mistake significantly diminishes the evaluation and surrenders vital central control. The engine identifies Qg3 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 136,
+    "motif": "trapped_rook",
+    "move_san": "Na4",
+    "fen": "rn2kb1r/pppbpppp/5n2/8/3PP3/2N1BN2/Pq3PPP/R2QKB1R w KQkq - 0 8",
+    "candidate_commentary": "White's move Na4 aims to activate the knight and potentially target the black king's side after castling. However, this move is flawed as it doesn't address the immediate tactical motif of trapping the rook on a1. The black queen on b2 is already exerting pressure, but without immediate threats or tactical opportunities, this move is passive and doesn't contribute to White's strategic goals. The best move, as suggested by the engine, would be e3d2, which would open lines for the bishop and queen, creating more active play and addressing the lack of development and coordination in White's position.",
+    "reference_commentary": "A costly inaccuracy. Na4 compromises piece harmony and invites an immediate tactical counter. This mistake significantly diminishes the evaluation and surrenders vital central control. The engine identifies e3d2 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 139,
+    "motif": "zwischenzug",
+    "move_san": "Na5",
+    "fen": "2rqr1k1/1b3pbp/ppnp2p1/4p3/P1BP1nP1/2P2N1P/1PQN1P1B/R3R1K1 b - - 2 17",
+    "candidate_commentary": "Black's move Na5 is a zwischenzug, intending to reroute the knight to a more active square and potentially disrupt White's coordination. However, this move is flawed as it overlooks the latent threat posed by White's bishop on g5, which, after f4h3, could deliver a devastating attack on Black's king side. The best move for Black would have been to solidify the pawn structure with f4h3, avoiding the bishop's pin and preventing White from exploiting the pin with moves like Bh6 or Qh4, which could have led to a quick tactical sequence against Black's king. The move Na",
+    "reference_commentary": "Black\u2019s passive retreat to a5 is a serious error that completely misses the decisive zwischenzug. By ignoring the opportunity to play f4-h3, White secures a safe passage for the knight and maintains a crushing positional advantage. The correct tactical sequence was to immediately sacrifice the knight with Nxh3+, forcing Kg2 and disrupting White\u2019s kingside structure.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 148,
+    "motif": "overloaded_piece",
+    "move_san": "Nxe5",
+    "fen": "1k1r3r/p1pnppb1/Bp4pp/4Pb2/3N1B1P/8/PPPR1PP1/2KR4 b - - 9 16",
+    "candidate_commentary": "Black's move Nxe5 is a tactical oversight as it allows White to play Be4, exploiting the overloaded piece situation. After Nxe5, if Black recaptures with d7xe5, White can play Be4, attacking the pinned pawn on d6 and gaining a material advantage. The move Nxe5 neglects the potential threats and fails to address White's latent pressure along the d-file. The best move for Black would have been f5xe4, attacking the bishop and creating counterplay on the kingside. Black's move is flawed as it weakens the king's position without creating any tangible benefits.",
+    "reference_commentary": "By committing Nxe5, the defensive burden collapses as the opponent exploits the overloaded defenders. The resulting sequence costs roughly 180 centipawns and gives the opponent a clear path forward. The engine identifies Be4 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 155,
+    "motif": "trapped_bishop",
+    "move_san": "Re7+",
+    "fen": "R7/2p3kp/7r/1p1P2pq/2b4B/2P1R1P1/5PB1/6K1 w - - 2 31",
+    "candidate_commentary": "White's move Re7+ is a tactical error as it allows Black to exploit the trapped bishop on h4. The pawn on g5 and queen on h5 constrain the bishop, making it a liability rather than an asset. By moving the rook to e7, White inadvertently opens up the possibility for Black to activate their own pieces, particularly the bishop on h4, which can now potentially capture White's rook on e7. The best move would have been g2f3, which would have maintained pressure on Black's position without creating immediate tactical vulnerabilities. White's move is a strategic misstep that could lead to a loss in material if Black",
+    "reference_commentary": "An unfortunate misstep. Re7+ hands the initiative to the opponent and worsens the evaluation considerably. The tactical refutation is swift, severely compromising the structural integrity of the position. The engine identifies g2f3 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 190,
+    "motif": "missed_mate",
+    "move_san": "Bxe4",
+    "fen": "N4k1r/pp2ppb1/8/2p1nq2/2P1bN2/BP2PB2/P6p/R2Q1R1K w - - 3 26",
+    "candidate_commentary": "White's move Bxe4 (f3xe4) is a tactical oversight aiming to disrupt Black's pawn structure and potentially open lines for the White bishop and queen. However, it fails to account for the immediate mate threat on Qd8#, as indicated by the engine's analysis. The move is flawed because it neglects the tactical motif of a missed mate, allowing Black to deliver checkmate in one move without any further complications from White. The strategic justification for the move was to create weaknesses in Black's camp, but it overlooks the more pressing issue of Black's direct mate threat. White should have prioritized addressing the mate",
+    "reference_commentary": "Bxe4 abandons the forced mate that was already on the board; White\u2019s queen on d1 can deliver the decisive blow with Qd8#, ending the game instantly. By playing the bishop capture, White not only wastes a tempo but also leaves the queen and rook on the back rank vulnerable, allowing Black to consolidate the huge material lead. The engine\u2019s evaluation drops from a winning +3000\u202fcp to a modest +279\u202fcp, reflecting the complete loss of the winning opportunity. This blunder turns a forced checkmate into a barely winning endgame.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 199,
+    "motif": "trapped_knight",
+    "move_san": "dxc3",
+    "fen": "rnb2rk1/ppp3np/3p4/5pQP/3p2P1/2NBPP2/PPP5/R3K2R b KQ - 0 15",
+    "candidate_commentary": "Black's move dxc3 is a significant tactical error as it prematurely exposes the knight on g7 without any immediate gain or threat. The move allows White to potentially exploit the pinning of the knight by the queen on g5, which could lead to further weaknesses in Black's position. The best strategic move would have been to reinforce the knight on g7 or develop pieces to control the center and prepare for potential counterplay, rather than creating a vulnerable piece that could be easily trapped. The loss of material without concrete compensation is a clear indication of a flawed decision.",
+    "reference_commentary": "dxc3 relinquishes control of the position, allowing the opponent to exploit concrete weaknesses. This mistake significantly diminishes the evaluation and surrenders vital central control. The engine identifies g8h8 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 215,
+    "motif": "pawn_fork",
+    "move_san": "exf6",
+    "fen": "2r1r1k1/p3qpbp/1p1p1np1/4P3/3B1P2/1P3bP1/PQ1N3P/1R2R1K1 w - - 0 22",
+    "candidate_commentary": "White's pawn move exf6 creates a pawn fork on the f7 and g7 squares, attacking the Black queen and bishop simultaneously. This fork is a tactical motif that can lead to material gain if Black is unable to defend both targets effectively. The fork exploits the lack of coordination between Black's pieces, as the bishop on g7 is pinned and the queen on e7 is threatened. White's move is strong as it puts immediate pressure on Black's position, forcing a response that could lead to further tactical opportunities or material loss. The engine's evaluation of 'GOOD' with 'loss: 0 cp' suggests that White's position is advantageous and",
+    "reference_commentary": "White executes a precise pawn fork, capturing the knight on f6 while simultaneously attacking the queen on e7. This energetic maneuver forces Black into a passive defense, as the queen must move to avoid being captured. By resolving the tension on the kingside with a material gain, White maintains a dominant positional advantage and keeps the initiative firmly in hand.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 223,
+    "motif": "endgame_calculation",
+    "move_san": "Bf5",
+    "fen": "1k1r3r/p1pnppb1/Bp4pp/4P3/4bB1P/5N2/PPPR1PP1/2KR4 b - - 7 15",
+    "candidate_commentary": "Black's move Bf5 (e4f5) is a tactical error as it allows White to exploit the pin on the pinned knight on c6. After Bxf5, if White plays Qxf5, Black's king will be in a dangerous position, facing double threats. The best move would have been e4c6, reinforcing the d5-pawn and avoiding the pin. This move neglects the endgame principles of activity and coordination, leading to a loss in material without adechnical justification.",
+    "reference_commentary": "A costly inaccuracy. Bf5 compromises piece harmony and invites an immediate tactical counter. The tactical refutation is swift, severely compromising the structural integrity of the position. The engine identifies e4c6 as the crucial resource to preserve the position.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 5,
+      "overall": 4.75,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 226,
+    "motif": "missed_mate",
+    "move_san": "Rxb7",
+    "fen": "5k2/ppR3R1/7p/8/8/6P1/P4PK1/r7 w - - 1 37",
+    "candidate_commentary": "White's move Rxb7 (c7b7) is a tactical oversight, as it overlooks the forced mate in two moves with Rh7. By capturing on b7, White prematurely exposes the king to a discovered check from the black rook on d7 after Rh7, leading to a quick mate. The strategic error lies in failing to recognize the latent threat and the tactical motif of a discovered check, which could have been easily exploited by Black. The correct sequence Rh7 followed by Kg8 Rhd7 demonstrates a missed tactical opportunity for White, resulting in a loss as per the engine's evaluation.",
+    "reference_commentary": "Grabbing the b\u2011pawn looks materialistic, but it abandons the only forced win. The rook on g7 could have slid to h7, delivering immediate mate as the black king on f8 is boxed in by its own pawn on h6 and has no flight squares. By playing\u202fRxb7\u202fWhite lets Black escape, and the evaluation drops from a decisive win to a modest edge.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  },
+  {
+    "index": 262,
+    "motif": "zwischenzug",
+    "move_san": "Qf3+",
+    "fen": "5q1k/pQ1R3p/6pb/4p3/8/1BK4P/PP6/5r2 b - - 4 34",
+    "candidate_commentary": "Black's move Qf3+ is a zwischenzug opportunity, aiming to disrupt White's coordination by attacking the bishop on f3. However, it's a flawed move as it overlooks the stronger response Rc1+, which would immediately challenge White's rook on c1 and potentially lead to a more advantageous position for Black. The engine's loss indicates that Black's move was not optimal, as the best move according to the engine was f1c1, which would have developed a piece and maintained pressure on White's position without committing to a less effective attack. Black's move fails to capitalize on the tactical motif effectively and misses the",
+    "reference_commentary": "Qf3+ looks like a forcing check, but it ignores the critical zwischenzug\u202fRc1+ (the engine\u2011preferred move\u202ff1c1) that would have kept Black\u2019s queen\u2011side pressure and preserved a +3.7 advantage. By playing the queen check, Black lets White answer calmly and the rook\u2011check is lost, dropping the evaluation to a mere +0.25. The missed intermezzo not only wastes a tempo but also allows White\u2019s pieces to consolidate, turning a winning position into a precarious one.",
+    "judge_score": {
+      "accuracy": 5,
+      "educational_value": 4,
+      "naturalness": 5,
+      "conciseness": 3,
+      "overall": 4.25,
+      "feedback": "Clear explanation with accurate tactical grounding."
+    }
+  }
+]

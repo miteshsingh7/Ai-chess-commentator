@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chess-commentator"
+version = "0.1.0"
+description = "Fine-tuning a small LLM to generate natural-language commentary explaining chess moves grounded in Stockfish and tactical taxonomy"
+authors = [{ name = "Mitesh Singh" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "python-chess>=1.999",
+    "pandas>=2.0.0",
+    "pyarrow>=12.0.0",
+    "requests>=2.28.0",
+    "pydantic>=2.0.0",
+    "pyyaml>=6.0",
+    "tqdm>=4.65.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.0.0",
+    "ruff>=0.4.0",
+]
+training = [
+    "torch>=2.1.0",
+    "transformers>=4.40.0",
+    "peft>=0.10.0",
+    "bitsandbytes>=0.43.0",
+    "trl>=0.8.0",
+    "accelerate>=0.29.0",
+    "datasets>=2.18.0",
+]
+serving = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["src"]
+addopts = "-v --strict-markers"

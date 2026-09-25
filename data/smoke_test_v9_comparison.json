@@ -1,0 +1,47 @@
+{
+  "summaries": [
+    {
+      "id": "greedy_std_max85",
+      "name": "Greedy Standard (85 tok)",
+      "scaffolding_leaks": 0,
+      "grounding_passes": 4,
+      "pass_rate": "4/8 (50.0%)"
+    },
+    {
+      "id": "greedy_std_rep1.1",
+      "name": "Greedy RepPenalty 1.1 (85 tok)",
+      "scaffolding_leaks": 0,
+      "grounding_passes": 3,
+      "pass_rate": "3/8 (37.5%)"
+    },
+    {
+      "id": "greedy_unified_max85",
+      "name": "Greedy Unified Constraint (85 tok)",
+      "scaffolding_leaks": 0,
+      "grounding_passes": 6,
+      "pass_rate": "6/8 (75.0%)"
+    },
+    {
+      "id": "greedy_unified_rep1.1",
+      "name": "Greedy Unified Rep1.1 (85 tok)",
+      "scaffolding_leaks": 0,
+      "grounding_passes": 4,
+      "pass_rate": "4/8 (50.0%)"
+    },
+    {
+      "id": "sample_unified_t0.3",
+      "name": "Sampled T0.3 Unified (85 tok)",
+      "scaffolding_leaks": 0,
+      "grounding_passes": 3,
+      "pass_rate": "3/8 (37.5%)"
+    },
+    {
+      "id": "greedy_std_max120",
+      "name": "Greedy Standard (120 tok)",
+      "scaffolding_leaks": 0,
+      "grounding_passes": 4,
+      "pass_rate": "4/8 (50.0%)"
+    }
+  ],
+  "best_config": "greedy_unified_max85"
+}

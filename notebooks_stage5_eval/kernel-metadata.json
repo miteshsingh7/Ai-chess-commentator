@@ -1,0 +1,15 @@
+{
+  "id": "miteshsingh7/phi35-chess-stage5-eval",
+  "title": "phi35-chess-stage5-eval",
+  "code_file": "stage5_eval.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": [
+    "miteshsingh7/phi35-chess-adapter-v10"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}
