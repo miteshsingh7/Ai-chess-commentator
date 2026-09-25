@@ -1,4 +1,4 @@
-"""CLI to generate teacher commentary on analyzed positions using Claude API with caching."""
+"""CLI to generate teacher commentary on analyzed positions using Groq API with caching."""
 
 import argparse
 import os
@@ -10,7 +10,7 @@ load_dotenv()
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
 import pandas as pd
 from chess_commentator.analysis.models import PositionAnalysis, BoardFeatures, TaxonomyResult
-from chess_commentator.teacher.client import ClaudeTeacherClient
+from chess_commentator.teacher.client import GroqTeacherClient
 from chess_commentator.teacher.cache import TeacherCache
 from chess_commentator.teacher.generator import TeacherCommentaryGenerator
 
@@ -88,7 +88,7 @@ def main() -> None:
         print("⚠️  Running in explicit MOCK mode (--mock flag provided). No real API calls will be made.")
 
     print(f"Loaded {len(df)} positions. Model: {args.model}, Mock mode: {args.mock}")
-    client = ClaudeTeacherClient(model=args.model, mock_mode=args.mock)
+    client = GroqTeacherClient(model=args.model, mock_mode=args.mock)
     cache = TeacherCache(cache_dir=args.cache_dir)
     generator = TeacherCommentaryGenerator(client=client, cache=cache)
 
@@ -106,7 +106,7 @@ def main() -> None:
     print(f"Total Financial Spend: ${spend_summary['total_cost_usd']:.4f} USD")
 
     if spend_summary["by_model"]:
-        print("\nReal Claude API Calls by Model:")
+        print("\nReal Groq API Calls by Model:")
         for m, d in spend_summary["by_model"].items():
             print(f"  • {m}: {d['calls']} calls, {d['in_tokens']} in, {d['out_tokens']} out, ${d['cost_usd']:.4f} USD")
 

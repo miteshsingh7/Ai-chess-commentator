@@ -8,7 +8,7 @@ Fine-tuning small open Language Models (**Phi-3.5-mini-instruct** / **Llama-3.1-
 
 - **Domain-Grounded Analysis**: Adapts chessIQ's phase 1–4 modules into a standalone engine stripped of Streamlit/UI code.
 - **15+ Tactical Taxonomies**: Classifies forks (knight, pawn, piece), pins, skewers, discovered attacks, back-rank mate, hanging pieces, trapped pieces, overloaded pieces, zwischenzugs, and phase technique errors.
-- **Teacher LLM Dataset Generation**: Generates master-level 2–4 sentence commentaries using Claude API with a SHA-256 content-hash disk cache to avoid duplicate API calls.
+- **Teacher LLM Dataset Generation**: Generates master-level 2–4 sentence commentaries using **Groq API** (`qwen/qwen3.8-27b`) with a SHA-256 content-hash disk cache to avoid duplicate API calls.
 - **Strict Quality Filtering**: Filters out eval-sign contradictions (e.g. praising blunders), hallucinated pieces/squares, and generic robotic filler.
 - **Kaggle GPU Ready (QLoRA)**: 4-bit `bitsandbytes` + `peft` + `trl` training pipeline runnable on a single Kaggle GPU (16GB T4 or 40GB A100).
 - **Dual Evaluation**: Evaluates models using automated metrics (ROUGE-L, Token-F1, Eval Agreement, Tactic Recall, Hallucination Rate) and an LLM-as-a-Judge 1–5 scoring rubric.
@@ -28,7 +28,7 @@ ai-chess-commentator/
 ├── scripts/
 │   ├── demo_cli.py                  # Live interactive commentary CLI
 │   ├── run_analysis.py              # PGN batch analysis & taxonomy classifier
-│   ├── run_teacher_generation.py    # Teacher generation with Claude API
+│   ├── run_teacher_generation.py    # Teacher generation with Groq API
 │   ├── run_dataset_cleaning.py      # Quality filters, balancing, and ChatML export
 │   ├── train_qlora.py               # Standalone training script
 │   └── run_eval.py                  # Benchmark & evaluation report
@@ -45,7 +45,7 @@ ai-chess-commentator/
 │       │   └── pipeline.py          # Unified pipeline & single-move analyzer
 │       ├── teacher/                 # Stage 2: Teacher LLM generation
 │       │   ├── prompt_builder.py    # Grounded prompt construction
-│       │   ├── client.py            # Claude API client with retry & mock mode
+│       │   ├── client.py            # Groq API client with sliding-window rate limiter & mock mode
 │       │   ├── cache.py             # SHA-256 content-hash disk cache
 │       │   └── generator.py         # Batch generation orchestrator
 │       ├── dataset/                 # Stage 3: Quality curation
@@ -186,10 +186,10 @@ Open **`http://localhost:8001`** in your browser.
 python scripts/run_analysis.py --pgn data/raw_pgn/sample.pgn --output data/processed/moves_analyzed.parquet --depth 18
 ```
 
-### Stage 2: Teacher Commentary Generation (Claude API)
+### Stage 2: Teacher Commentary Generation (Groq API)
 ```bash
-export ANTHROPIC_API_KEY="your_api_key"
-python scripts/run_teacher_generation.py --input data/processed/moves_analyzed.parquet --output data/processed/moves_with_commentary.parquet --model claude-3-5-haiku-20241022
+export GROQ_API_KEY="your_api_key"
+python scripts/run_teacher_generation.py --input data/processed/moves_analyzed.parquet --output data/processed/moves_with_commentary.parquet --model qwen/qwen3.8-27b
 ```
 *Generated responses are cached in `.cache/teacher_commentary/` by SHA-256 hash to eliminate redundant API spend.*
 
