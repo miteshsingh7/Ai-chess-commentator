@@ -238,29 +238,6 @@
 </div>
 </div>
 </div>
-<!-- ASYNCHRONOUS "ANALYSIS IN PROGRESS" SKELETON STATE CARD -->
-<div class="bg-surface-container-low rounded-xl p-space-md border border-white/5 flex flex-col gap-space-sm opacity-90 shadow-md">
-<div class="flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="relative flex h-2.5 w-2.5">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
-</span>
-<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Continuous Background Analysis</span>
-</div>
-<span class="font-notation-mono text-[11px] text-outline">Thread #4</span>
-</div>
-<!-- Skeleton Content Mimic -->
-<div class="flex flex-col gap-2 animate-pulse pt-1">
-<div class="h-3 w-3/4 bg-surface-container-high rounded"></div>
-<div class="h-3 w-1/2 bg-surface-container-high rounded"></div>
-<div class="h-2 w-full bg-surface-container rounded mt-1"></div>
-</div>
-<p class="font-body-sm text-body-sm text-outline pt-1 text-[12px] flex items-center gap-1">
-<span class="material-symbols-outlined text-[14px]">tune</span> Stockfish scanning depth 32 transposition tables...
-            </p>
-</div>
-</div>
 </section>
 <!-- BOTTOM SECTION: GRANDMASTER HISTORICAL MATCH ANNOTATION -->
 <section class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-lg border border-white/5 flex flex-col md:flex-row items-center justify-between gap-space-md">
@@ -275,7 +252,7 @@
 </div>
 </div>
 <div class="flex items-center gap-space-sm w-full md:w-auto">
-<button class="w-full md:w-auto px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-1.5" type="button">
+<button id="btn-load-master-pgn" class="w-full md:w-auto px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-1.5" type="button">
 <span class="material-symbols-outlined text-[18px]">library_books</span> Load Master PGN
           </button>
 <button class="w-full md:w-auto px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors flex items-center justify-center gap-1.5" type="button">
@@ -468,7 +445,14 @@
         drawer.style.display=(drawer.style.display==="none"||!drawer.style.display)?"flex":"none";
       });
       document.getElementById("btn-close-pgn")?.addEventListener("click",()=>{if(drawer) drawer.style.display="none";});
-      document.getElementById("btn-sample-opera")?.addEventListener("click",()=>{const ta=document.getElementById("pgn-textarea");if(ta)ta.value=SAMPLE_PGNS.opera;loadPgn(SAMPLE_PGNS.opera);});
+      ["btn-sample-opera", "btn-load-master-pgn"].forEach(id => {
+        document.getElementById(id)?.addEventListener("click", () => {
+          const ta = document.getElementById("pgn-textarea");
+          if (ta) ta.value = SAMPLE_PGNS.opera;
+          loadPgn(SAMPLE_PGNS.opera);
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      });
       document.getElementById("btn-sample-fork")?.addEventListener("click",()=>{const ta=document.getElementById("pgn-textarea");if(ta)ta.value=SAMPLE_PGNS.fork;loadPgn(SAMPLE_PGNS.fork);});
       document.getElementById("btn-load-pgn-submit")?.addEventListener("click",()=>{const ta=document.getElementById("pgn-textarea");if(ta)loadPgn(ta.value);});
       document.getElementById("btn-first-move")?.addEventListener("click",()=>navTo(-1));
